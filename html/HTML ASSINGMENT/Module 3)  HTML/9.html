@@ -1,0 +1,35 @@
+•9.  How is Cell Padding different from Cell Spacing? With Example.
+ans.
+        •Cellpadding basically defines the space present between a table cell's border and the content present in it. 
+         Cellspacing basically defines the space present between individual adjacent cells. One can create it using the 
+         tag of HTML <table>, but it sets the type attribute to cellpadding.
+
+          • Cell Padding and Cell Spacing are terms associated with HTML table elements, used for layout and formatting purposes.
+
+          • Cell Padding refers to the space between the content of a table cell and the cell's borders. It controls the amount of space between the content and the cell's edges. 
+            This is typically set using the CSS padding property. Here's an example of how you might apply cell padding to a table cell:
+            
+                <table style="border-collapse: collapse;">
+                    <tr>
+                    <td style="border: 1px solid black; padding: 10px;">Cell with padding</td>
+                    </tr>
+                </table>
+
+
+
+          • Cell Spacing, on the other hand, refers to the space between adjacent cells within a table. It controls the gap between the borders of adjacent cells. 
+            This can also be set using CSS, specifically the border-spacing property on the table element. Here's an example:
+        
+                <table style="border-collapse: separate; border-spacing: 10px;">
+                    <tr>
+                    <td style="border: 1px solid black;">Cell 1</td>
+                    <td style="border: 1px solid black;">Cell 2</td>
+                    </tr>
+                </table>
+
+      • To summarize:
+
+        Cell Padding affects the space between the content and the cell's borders.
+        Cell Spacing affects the space between adjacent cells within the table.
+        Both of these properties can be adjusted using CSS to achieve the desired spacing and layout for your HTML tables. It's important to note that in modern web development, the use of tables for layout is less common, and alternatives like CSS Flexbox and Grid are often preferred for creating complex layouts.
+

@@ -1,0 +1,46 @@
+•14. What is the use of a span tag? Explain with example?
+ans.
+        The HTML span element is a generic inline container for inline elements and content. It is used to group elements for styling purposes (by using the class or id 
+        attributes), A better way to use it when no other semantic element is available.
+
+        The span tag is a paired tag means it has both open(<) and closing (>) tags, and it is mandatory to close the tag. The span tag is used for the grouping of inline 
+        elements & this tag does not make any visual change by itself. span is very similar to the div tag, but div is a block-level tag and span is an inline tag.
+
+
+            <!DOCTYPE html>
+            <html>
+            
+            <head>
+                <title>GeeksforGeeks span tag</title>
+
+                <style>
+                    .highlight {
+                        background-color: yellow;
+                        font-weight: bold;
+                    }
+                </style>
+            </head>
+            
+            <body>
+                <h2>Welcome To GfG</h2>
+                
+                <!-- Inside paragraph applying
+                    span tag with different style -->
+                <p>This is a <span class="highlight">highlighted</span> word using CSS.</p>
+                
+            
+            <p>
+                    <span style="background-color:lightgreen">
+                        GeeksforGeeks </span> </br> 
+                    is A Computer Science Portal where you can
+                    <span style="color:blue;">Publish </span> </br> 
+                    your own
+                    <span onclick="alert('You clicked the span!')" style="cursor: pointer; text-decoration: underline;">here</span> </br>
+                    <span style="background-color:lightblue;">articles </span> </br> 
+                    and share your knowledge with the world!!
+                </p>
+            
+            
+            </body>
+            
+            </html>

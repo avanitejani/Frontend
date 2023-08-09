@@ -1,0 +1,57 @@
+•7.  What is the difference between the ‘id’ attribute and the ‘class’ attribute of HTML elements? With Example.
+ans.
+        Remember the difference between Class and ID: A Class name can be used by multiple HTML elements, while an ID name must only be used by 
+        one HTML element within the page. The following is a sample HTML page using the Class name GreekCity. You can copy code from this to try 
+        it out yourself.
+
+        id Attribute:
+        • The 'id' attribute is used to uniquely identify a single element on a web page. Each 'id' value must be unique within the entire HTML document, meaning you cannot assign the same 'id' value to multiple elements.
+        • The 'id' attribute is often used when you want to target a specific element for styling or JavaScript manipulation.
+        • When using CSS or JavaScript, you can select an element by its 'id' and apply specific styles or behaviors to that particular element.
+
+            <!DOCTYPE html>
+            <html>
+            <head>
+            <title>id Attribute Example</title>
+            <style>
+                /* CSS rule for element with id 'special-heading' */
+                #special-heading {
+                color: blue;
+                font-weight: bold;
+                }
+            </style>
+            </head>
+            <body>
+            <h1 id="special-heading">Welcome to My Website</h1>
+            <p>This is a paragraph.</p>
+            </body>
+            </html>
+
+                In this example, the 'id' attribute with the value 'special-heading' is applied to the <h1> element. The CSS style rule #special-heading targets the element with the 'id' of 'special-heading' and sets the color to blue and font weight to bold.
+
+        class Attribute:
+        • The 'class' attribute is used to group elements together based on a common characteristic or category. Unlike the 'id' attribute, multiple elements can share the same 'class' value. This allows you to apply the same styles or behaviors to multiple elements on the page.
+        • The 'class' attribute is commonly used for CSS styling, where you define styles for elements with a specific class name.
+
+            <!DOCTYPE html>
+            <html>
+            <head>
+            <title>Class Attribute Example</title>
+            <style>
+                /* CSS rule for elements with class name 'highlight' */
+                .highlight {
+                background-color: yellow;
+                font-weight: bold;
+                }
+            </style>
+            </head>
+            <body>
+            <h1 class="highlight">Welcome to My Website</h1>
+            <p>This is a <span class="highlight">paragraph</span> with some highlighted text.</p>
+            <p class="highlight">This is another paragraph with the class name 'highlight'.</p>
+            </body>
+            </html>
+                In this example, all elements with the 'highlight' class will have the specified CSS styles applied to them, resulting in a yellow background color and bold font weight.
+
+                In summary, the 'id' attribute is used for uniquely identifying a single element, while the 'class' attribute is used for grouping multiple elements with common properties together. The 'id' attribute should be unique, while the same 'class' can be used on multiple elements throughout the page.
+

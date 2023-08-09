@@ -1,0 +1,44 @@
+
+•10. How can we club two or more rows or columns into a single row or column in an HTML table? With Example.
+ans.
+
+        • In an HTML table, you can use the colspan attribute to merge multiple columns into a single column and the rowspan attribute to merge multiple rows into a single row. 
+        This allows you to create more complex layouts and display data in a visually appealing way.
+
+        • Here's an example of how you can use colspan and rowspan to merge cells in an HTML table:
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Document</title>
+            </head>
+            <body>
+                
+                <table border="1">
+                    <tr>
+                    <td>Row 1, Cell 1</td>
+                    <td>Row 1, Cell 2</td>
+                    <td colspan="2">Merged Column</td>
+                    </tr>
+                    <tr>
+                    <td rowspan="2">Merged Row</td>
+                    <td>Row 2, Cell 2</td>
+                    <td>Row 2, Cell 3</td>
+                    <td>Row 2, Cell 4</td>
+                    </tr>
+                    <tr>
+                    <td>Row 3, Cell 2</td>
+                    <td>Row 3, Cell 3</td>
+                    <td>Row 3, Cell 4</td>
+                    </tr>
+                </table>
+
+            </body>
+            </html>
+            
+        • The cell in the first row, third column (<td colspan="2">Merged Column</td>) spans two columns, effectively merging with the adjacent cell and covering two columns.
+        • The cell in the second row, first column (<td rowspan="2">Merged Row</td>) spans two rows, effectively merging with the cells in the row below.
+        • The result is a table with merged cells that visually group and structure the content.
+
+        Please note that while using colspan and rowspan can be useful for certain layouts, excessive use can make the table structure complex and harder to maintain. In modern web development, it's often recommended to use CSS for layout purposes and to reserve tables for displaying tabular data.  

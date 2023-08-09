@@ -1,0 +1,29 @@
+<!-- •15. How to insert a picture into a background image of a web page? With Example.
+ans. -->
+
+<!-- To set the background image of a webpage, use the CSS style. Under the CSS <style> tag, add the property background-image. 
+The property sets a graphic such as jpg, png, svg, gif, etc. HTML5 do not support the <body> background attribute, so CSS is used to change set background image. -->
+
+    <!DOCTYPE html>
+    <html lang="en">
+      
+    <head>
+        <title>Website</title>
+      
+        <style>
+            body{
+                background-image:url("https://images.pexels.com/photos/16407227/pexels-photo-16407227/free-photo-of-man-in-a-leather-jacket-with-his-head-tilted-back.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load");
+                /* background-repeat: no-repeat; */
+                background-attachment: fixed; 
+                background-size: 100% 100% ;
+            }
+        </style>
+    </head>
+      
+    <body>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, id?</h1>
+        <h2>Background Image</h2>
+    </body>
+      
+    </html>
+

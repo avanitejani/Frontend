@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            border: 2px solid red;
+        }
+        p::first-letter{
+            color: green;
+        }
+        p::first-line{
+            color: blue;
+        }
+        p::before{
+            content:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc5Pf_hvsxxUxiZAAd0x5ynN-UtJVkd5DwFpuVD7_SXg&s") ;
+        }
+        p::after    {
+            content:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc5Pf_hvsxxUxiZAAd0x5ynN-UtJVkd5DwFpuVD7_SXg&s") ;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ipsa?</p>
+</body>
+</html>

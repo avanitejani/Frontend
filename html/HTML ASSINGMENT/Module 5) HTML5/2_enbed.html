@@ -1,0 +1,55 @@
+<!-- • How to embed audio and video in a webpage?
+ans.
+
+Create a new HTML file in the same directory, called index. html . Add <audio> and <video> elements to the page; make them display the default browser controls. Give both of them <source> elements so that browsers will find the audio format they support best and load it.
+
+    To embed audio and video in a webpage, you can use the <audio> and <video> elements in HTML5. These elements allow you to add multimedia content to your webpage with ease. Here's how you can embed audio and video:
+
+        Embedding Audio:
+        
+        To embed audio on your webpage, use the <audio> element. Here's an example:
+        
+            <audio controls>
+                <source src="audiofile.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+    
+        Embedding Video:
+
+        To embed video on your webpage, use the <video> element. Here's an example:
+
+            <video controls>
+                <source src="videofile.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+
+        Similar to audio, the controls attribute adds video controls to the player. Replace "videofile.mp4" with the actual path to your video file. The <source> element specifies the video file's source and type. The text inside the <video> element is displayed if the browser does not support the <video> element.
+             -->
+
+
+
+
+
+        
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>audio and video</title>
+</head>
+<body>
+
+    <audio controls loop="true" autoplay="true">
+        <source src="audio/Pasoori Nu - Arijit Singh.mp3" type="audio/mp3">
+    </audio>
+
+
+    <video controls>
+        <source src="https://player.vimeo.com/external/585289500.sd.mp4?s=66be3c8353f27e8d30e52d76bd1802e14565395f&profile_id=164&oauth2_token_id=57447761" type="video/mp4">
+        Your browser does not support the video element.
+    </video>
+    
+</body>
+</html>

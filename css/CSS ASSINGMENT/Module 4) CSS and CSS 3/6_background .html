@@ -1,0 +1,67 @@
+• 6.    How can the background color of an element be changed?
+ans.
+
+The background color of an element in HTML and CSS can be changed using the background-color property. This property allows you to set the color of an element's background. You can specify colors using various formats, such as color names, hexadecimal values, RGB values, or HSL values. Here's how you can use the background-color property:
+
+    1. Using Color Names:
+        .element {
+            background-color: red;
+        }
+
+    2. Using Hexadecimal Values:
+        .element {
+            background-color: #00ff00; /* Green */
+        }
+
+    3. Using RGB Values:
+        .element {
+            background-color: rgb(255, 0, 0); /* Red */
+        }
+
+    4. Using HSL Values:
+        .element {
+            background-color: hsl(120, 100%, 50%); /* Green */
+        }
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <style>
+                div {
+                    margin: 50px 50px;
+                    font-size: 50px;
+                }
+        
+                .gfg1 {
+                    background-color: green;
+                }
+        
+                .gfg2 {
+                    background-color: #205c20; /* Green */
+                    color: black;
+                }
+        
+                .gfg3 {
+                    background-color: rgb(2, 71, 17); /* Green */
+                }
+                .gfg4 {
+                    background-color: hsl(120, 87%, 25%); /* Green */
+                }
+            </style>
+        </head>
+        
+        <body>
+            <div class="gfg1">
+                Using Color Names
+            </div>
+            <div class="gfg2">
+                Using Hexadecimal Values
+            </div>
+            <p class="gfg3" style="margin:50px 50px; font-size: 50px;">
+                Using RGB Values
+            </p>
+            <div class="gfg4">
+                Using HSL Values
+            </div>
+        </body>
+        </html>

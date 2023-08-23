@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+    <!-- 
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"
+        integrity="sha512-p55Bpm5gf7tvTsmkwyszUe4oVMwxJMoff7Jq3J/oHaBk+tNQvDKNz9/gLxn9vyCjgd6SAoqLnL13fnuZzCYAUA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css"
+        integrity="sha512-UBY4KATrDAEKgEEU+RAfY4yWrK0ah43NGwNr5o/xmncxsT+rv8jp7MI3a00I0Ep3NbAx05U5kw3DvyNCoz+Wcw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .vl {
+            border-left: 1px solid;
+            height: 50px;
+        }
+
+        .bxslider img {
+            width: 100%;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header>
+
+        <div class="topheader">
+            <div class="left">
+                <ul>
+                    <li><a href=""><i class="fa-solid fa-envelope"></i> info@company.com</a></li>
+                    <!-- <span class="vl" hight="0px"></span> -->
+                    <button class="search"></button>
+
+                    <li><a href=""><i class="fa-solid fa-map"></i>Sunny Isles Beach, FL 33160</a></li>
+                </ul>
+            </div>
+
+            <div class="right">
+                <ul>
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                    <li><i class="fa-brands fa-twitter"></i></li>
+                    <li><i class="fa-brands fa-linkedin"></i></li>
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <hr style="color: gray; height: 2px;">
+
+
+
+        <div class="bottemheader">
+            <div class="left">
+                <h1><b>VILLA</b></h1>
+            </div>
+
+            <div class="right">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Properties</a></li>
+                    <li><a href="">Properties Details</a></li>
+                    <li><a href="">Contact Us</a></li>
+
+                    <li class="cal"><a href=""><i class="fa-solid fa-calendar"></i><em>...</em>schedule a visit</a></li>
+                    <!-- <div class="cal"></div> -->
+
+                </ul>
+            </div>
+        </div>
+
+
+
+    </header>
+    <!-- section 1 -->
+
+
+    <!-- section1  -->
+    <!-- <div class="section1">
+        <div class="main">
+            <div class="villa">
+                <img src="img/banner-01.jpg" alt="">
+            </div>
+            <div class="text">
+                <H2>Toronto,<em> Canada </em></H2>
+                <h1>HURRY!<br> GET THE BEST<br> VILLA FOR YOU</h1>
+            </div>
+
+            <div class="right"><i class="fa-solid fa-angle-right"></i></div>
+            <div class="left"><i class="fa-solid fa-angle-left"></i></div>
+
+        </div>
+    </div>
+
+   -->
+
+
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="img/banner-01.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <H2>Toronto,<em> Canada </em></H2>
+                    <h1>HURRY! GET THE BEST VILLA FOR YOU</h1>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="img/banner-02.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <H2>Miami ,<em>South Florida</em></H2>
+                    <h1>ACT NOW !<br> GET THE HIGHEST<br>LEVEL PENTHOUSE</h1>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/banner-03.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <H2>Melbourne,<em> Australia</em></H2>
+                    <h1>BE QUICK!<br> GET THE BEST<br> VILLA IN TOWN</h1>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <script>
+        $(function () {
+            $('.bxslider').bxSlider({
+                mode: 'fade',
+                captions: true,
+            });
+        });
+
+    </script>
+
+
+
+
+
+    <!-- section 2 -->
+
+    <div class="section2">
+        <div class="main2">
+            <div class="right">
+                <img src="img/section2.jpg" alt="">
+                <i class="fa-solid fa-house-chimney-user fa-2xl" style="color:whitesmoke;"></i>
+            </div>
+            <div class="center">
+                <h5>| FEATURED</h5>
+                <h1>Best Appartment <br>& Sea View</h1>
+                <div class="box">
+                    <div>
+                        <h3>Best useful links ?</h3>
+                    </div>
+                    <p>Get the best villa website template in HTML CSS and Bootstrap for your business. TemplateMo
+                        provides you the best free CSS templates in the world. Please tell your friends about it.</p>
+                    <hr>
+
+                    <div>
+                        <h3>How does this work ?</h3>
+                    </div>
+                    <!-- <p>Dolor almesit amet, consectetur adipiscing elit, sed doesn't eiusmod tempor incididunt ut labore consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+                    <hr>
+
+                    <div>
+                        <h3>Why is Villa Agency the best ?</h3>
+                    </div>
+                    <!-- <p>Dolor almesit amet, consectetur adipiscing elit, sed doesn't eiusmod tempor incididunt ut labore consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+                </div>
+            </div>
+            <div class="left">
+                <div class="box">
+                    <ul>
+                        <li>
+                            <h4><i class="fa-solid fa-city fa-2xl"></i>250 m2</h4><br>
+                            <span>Total Flat Space</span>
+                        </li>
+                    </ul>
+                    <hr>
+                    <ul>
+                        <li>
+                            <h4><i class="fa-regular fa-address-card fa-2xl"></i>Contract</h4><br>
+                            <span>Contract Ready</span>
+                        </li>
+                    </ul>
+                    <hr>
+                    <ul>
+                        <li>
+                            <h4><i class="fa-solid fa-landmark fa-2xl"></i>Payment</h4><br>
+                            <span>Payment Process</span>
+                        </li>
+                    </ul>
+                    <hr>
+                    <ul>
+                        <li>
+                            <h4><i class="fa-solid fa-list-check fa-2xl"></i>Safety</h4><br>
+                            <span>24/7 Under Control</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- section3 -->
+
+    <div class="section3">
+        <div class="living">
+            <img src="img/living.jpg" alt="">
+        </div>
+        <div class="text">
+            <h5>| VIDEO VIEW</h5>
+            <h1>Get Closer View &<br> Different Feeling</h1>
+        </div>
+        <div class="living2">
+            <!-- <img src="img/living.jpg" alt=""> -->
+        </div>
+    </div>
+
+</body>
+
+</html>

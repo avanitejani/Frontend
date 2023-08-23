@@ -1,0 +1,65 @@
+@media(min-width:576px){
+    /* header  */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.header {
+  display: flex;
+  width: 100%;
+  flex-direction: unset;
+}
+.header .left {
+     width: 50%;
+     margin: 20px;
+}
+/* .header .right {
+    display: none;
+} */
+/* section1  */
+.section1 .main{
+    position: relative;
+   }
+   .section1 .main .sea img{
+    width: 100%;
+    height: 400px;
+    filter: brightness(90%);
+
+   }
+   .section1 .main .text{
+    position: absolute;
+    top:120px;
+    left:1%;
+    right:1%;
+
+   }
+   .section1 .main .text h1{
+   font-size: 35px;
+ 
+   }
+   .section1 .main .text p{
+    font-size:13px;
+    margin: 10px 0px;
+    
+ 
+    }
+    .section1 .main .text .btn{
+      display: flex;
+      width: 100%;
+      flex-direction: unset;
+      justify-content: center;
+      /* border: 2px solid red; */
+      margin-top: 20px;
+       }
+    .section1 .main .text .read{
+     padding: 10px 20px;
+     font-size: 12px;
+      }
+      .section1 .main .text .down{
+        padding: 10px 20px;
+       font-size: 12px;
+         }
+
+        }
+

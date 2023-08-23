@@ -1,0 +1,92 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .d1 {
+            height: 295px;
+            width: 236px;
+            border: 2px solid red;
+            position: relative;
+        }
+
+
+        .d2 {
+            height: 200px;
+            width: 200px;
+            border-top: 2px dotted black;
+            border-radius: 50%;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: earth 4s linear 0s infinite;
+            /* animation-name: earth;
+        animation-duration: 2s;
+        animation-timing-function: linear; */
+            /* animation-delay: 2s; */
+            /* animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-fill-mode: both; */
+        }
+
+        @keyframes earth {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        
+    </style>
+
+
+
+</head>
+
+<body>
+
+</body>
+
+<div class="d1">
+    <img src="https://i.pinimg.com/236x/02/16/14/02161447037c6e833db38412b9043c18.jpg" alt="">
+</div>
+<div class="d2"></div>
+<div class="d3"></div>
+
+
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#myDIV {
+  width: 300px;
+  height: 200px;
+  background: red;
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  from {background-color: Purple;}
+  to {background-color: maroon;}
+}
+</style>
+</head>
+<body>
+<h1>Animation of background-color</h1>
+
+<p>Gradually change the background-color from red to blue:<p>
+
+<div id="myDIV"></div>
+
+</body>
+</html>

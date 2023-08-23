@@ -1,0 +1,107 @@
+• 20.    Create image gallery using display grid with responsive
+ans.
+<!DOCTYPE html>
+<html>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1>Responsive Image Grid</h1>
+  <p>Resize the browser window to see the responsive effect.</p>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="https://images.pexels.com/photos/6187159/pexels-photo-6187159.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" style="width:100%">
+    <img src="https://images.pexels.com/photos/6525019/pexels-photo-6525019.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" style="width:100%">
+    <img src="https://images.pexels.com/photos/17919998/pexels-photo-17919998/free-photo-of-road-nature-clouds-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" style="width:100%">
+    <img src="https://images.pexels.com/photos/17893962/pexels-photo-17893962/free-photo-of-light-city-road-traffic.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width:100%">
+    <img src="https://images.pexels.com/photos/17589784/pexels-photo-17589784/free-photo-of-display-of-old-fashioned-clocks-and-alarm-clocks.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" style="width:100%">
+    <img src="https://images.pexels.com/photos/4148017/pexels-photo-4148017.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" style="width:100%">
+    <img src="https://images.pexels.com/photos/11897866/pexels-photo-11897866.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://images.pexels.com/photos/7525051/pexels-photo-7525051.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" style="width:100%">
+    <img src="https://images.pexels.com/photos/17802395/pexels-photo-17802395/free-photo-of-woman-hands-holding-camera.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" style="width:100%">
+    <img src="https://images.pexels.com/photos/12825195/pexels-photo-12825195.png?auto=compress&cs=tinysrgb&w=1600&lazy=load" style="width:100%">
+    <img src="https://images.pexels.com/photos/17601814/pexels-photo-17601814/free-photo-of-cars-in-a-city-at-night.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" style="width:100%">
+    <img src="https://images.pexels.com/photos/16945753/pexels-photo-16945753/free-photo-of-dog-in-water.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" style="width:100%">
+    <img src="https://images.pexels.com/photos/16407227/pexels-photo-16407227/free-photo-of-man-in-a-leather-jacket-with-his-head-tilted-back.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="https://images.pexels.com/photos/17781600/pexels-photo-17781600/free-photo-of-portrait-of-a-woman-looking-up.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" style="width:100%">
+    <img src="https://i.pinimg.com/236x/11/56/db/1156db53f8b9a276fa25bb1e7ed789e2.jpg" style="width:100%">
+    <img src="https://i.pinimg.com/236x/65/1a/70/651a7069645597422931819d36b52e0e.jpg" style="width:100%">
+    <img src="https://i.pinimg.com/236x/9d/14/5e/9d145e8592216e5a02d2c50b870e9e5e.jpg" style="width:100%">
+    <img src="https://i.pinimg.com/564x/de/bd/11/debd11741e7aa018fc661c87b9137753.jpg" style="width:100%">
+    <img src="https://i.pinimg.com/236x/15/73/bf/1573bf91f8e75df0faf2f57657a374e3.jpg" style="width:100%">
+    <img src="" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://i.pinimg.com/236x/e9/78/be/e978be1d9948251dea2b080c1972afba.jpg" style="width:100%">
+    <img src="https://i.pinimg.com/236x/d8/af/20/d8af201fe2cd9df8a4e8b0e2f8551511.jpg" style="width:100%">
+    <img src="https://i.pinimg.com/236x/05/b4/bc/05b4bc24d05954fc4d4a983eaad5c3cc.jpg" style="width:100%">
+    <img src="https://i.pinimg.com/236x/b0/05/83/b0058378a26c252e39381f1c5ea4e669.jpg" style="width:100%">
+    <img src="https://i.pinimg.com/236x/77/c0/71/77c07190f6adfafaeb7e05ce6936ebf3.jpg" style="width:100%">
+    <img src="https://i.pinimg.com/236x/33/5c/4a/335c4a4162718c4da6062f82de897354.jpg" style="width:100%">
+  </div>
+</div>
+
+</body>
+</html>

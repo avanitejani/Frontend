@@ -169,6 +169,7 @@
 /* section1  */
 .section1 .main {
     position: relative;
+    background-color: rgb(222, 222, 222);
 }
 
 .section1 .main .sea img {

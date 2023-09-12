@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web1</title>
+
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <!-- font-awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+    <!-- <style>
+            @media (max-width:576px) {
+    
+                .slide {
+                    height: 150px;
+                    width: 576px;
+                }
+    
+                .sea {
+                    height: 500px !important;
+                }
+    
+                .submit {
+                    width: 150px !important;
+                }
+            }
+    
+            @media (min-width:576px) {
+                h1 {
+                    font-size: 30px !important;
+                }
+    
+                p {
+                    font-size: 15px !important;
+                }
+    
+                button {
+                    font-size: 15px !important;
+                    padding: 0px 10px !important;
+                }
+    
+                .slide {
+                    height: 100px;
+                    width: 100%;
+                }
+            }
+    
+            @media (min-width:768px) {
+                .slide {
+                    height: 200px;
+                    width: 100%;
+    
+                }
+    
+                .name {
+                    width: 700px;
+                }
+            }
+    
+            @media (min-width:992px) {
+                .slide {
+                    height: 300px;
+                    width: 100%;
+                }
+    
+                .earth i {
+                    background-color: rgb(130, 41, 41);
+                    padding: 15px 20px;
+                    border-radius: 50%;
+                }
+    
+                .swara:hover i {
+                    background-color: blue;
+                }
+    
+                .swara:hover h5 {
+                    color: blue;
+                }
+    
+            }
+    
+            .sea {
+                background-image: url("img/slider1.jpg");
+                height: 350px;
+                width: 100%;
+                background-repeat: no-repeat;
+                background-position: top;
+                background-size: cover;
+                background-attachment: fixed;
+                filter: brightness(40%);
+            }
+    
+            .submit {
+                width: 300px;
+            }
+    
+            .lorem:hover {
+                background-color: red;
+                color: white;
+            }
+        </style> -->
+
+    <style>
+        @media (max-width:576px) {
+
+            .slide {
+                height: 100px;
+            }
+        }
+
+        @media (min-width:576px) {
+            h1 {
+                font-size: 30px !important;
+            }
+
+            p {
+                font-size: 15px !important;
+            }
+
+            button {
+                font-size: 15px !important;
+                padding: 0px 10px !important;
+            }
+
+            .slide {
+                height: 100px;
+            }
+        }
+
+        @media (min-width:768px) {
+            .slide {
+                height: 200px;
+            }
+        }
+
+        @media (min-width:992px) {
+            .slide {
+                height: 300px;
+            }
+        }
+
+        .sea {
+            background-image: url("img/sun.webp");
+            height: 350px;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: cover;
+            background-attachment: fixed;
+            filter: brightness(40%);
+        }
+
+        .submit {
+            width: 300px;
+        }
+
+        .lorem:hover {
+            background-color: rgb(20, 97, 128);
+            color: white;
+
+        }
+
+        .lorem :hover h5 {
+            /* background-color: rgb(20, 97, 128); */
+            color: #f5c20a;
+
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <!-- auto <576 
+    sm   >576 
+    md   >768 
+    lg   >992
+    xl  >1200px
+    xxl >1400px -->
+
+    <div class="container-fluid">
+        <div class="row text-light " style="height: 70px; background-color: rgb(206, 43, 43); ">
+            <div class="col-5">
+                <h1 class="h1 mt-2 fw-bold ms-3">Str<i class="fa-solid fa-earth-americas fa-xs"
+                        style="color: #f5c20a;"></i>ll</h1>
+
+            </div>
+            <div class="col-md-6 col-sm-3 col-auto">
+                <ul class="list-unstyled d-flex justify-content-end mt-4">
+                    <li class="mx-4"> <a href="" class="text-decoration-none text-warning fw-bold">HOME</a> </li>
+                    <li class="mx-4"> <a href="" class="text-decoration-none text-light fw-bold">ABOUT</a> </li>
+                    <li class="mx-4"> <a href="" class="text-decoration-none text-light fw-bold">DESTINATION</a> </li>
+                    <li class="mx-4"> <a href="" class="text-decoration-none text-light fw-bold">BLOG<i
+                                class="fa-solid fa-angle-down fa-sm" style="color: #fcfcfc;"></i></a> </li>
+                    <li class="mx-4"> <a href="" class="text-decoration-none text-light fw-bold">CONTACT</a> </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="row" style="background-color: rgb(243, 243, 243);">
+            <div class="col-lg-6 col-md-12  col-sm-12 col-auto" style="padding-top: 170px;">
+                <div class="container">
+                    <h5 class="mt-5 pt-5 ms-5 fw-bold" style="color: rgb(65, 126, 126);">Mountain Holiday</h5>
+                    <h1 class="display-3 ms-5" style="font-weight: 400;">Explore your Travel
+                        <span class="fw-bold">Destinations</span>
+                    </h1>
+                    <p class="lead ms-5">Enjouy your best Destinations with our travel agency</p>
+                    <button class="btn btn-outline-secondary btn-lg ms-5"
+                        style="color: #29506f;border:2px solid #29506f;">Read More</button>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12  col-auto">
+                <img src="img/slider1.jpg" alt="" class="w-100 slide  " style="height: 800px;">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row mt-5 pt-5 mb-5 pb-5">
+
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <i class="fa-solid fa-earth-americas fs-3" style="color: #f20202;"></i>
+                <h5 class="fw-bold mt-2">Voyages & Cruises</h5>
+                <p class="lead mt-2"> Lorem ipsum dolor sit amet,Ea consequuntur illum facere .</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <i class="fa-solid fa-bed fs-3" style="color: #f20202;"></i>
+                <h5 class="fw-bold mt-2">Hotel Bookings</h5>
+                <p class="lead mt-2">Lorem ipsum dolor sit amet,Ea consequuntur illum facere .</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <i class="fa-solid fa-plane-departure fs-3" style="color: #f20202;"></i>
+                <h5 class="fw-bold mt-2">Air Tickets</h5>
+                <p class="lead mt-2"> Lorem ipsum dolor sit amet,Ea consequuntur illum facere</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <i class="fa-regular fa-file-lines fs-3" style="color: #f20202;"></i>
+                <h5 class="fw-bold mt-2">Visas</h5>
+                <p class="lead mt-2"> Lorem ipsum dolor sit amet,Ea consequuntur illum facere</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="col-sm-12 d-flex mt-5" style="background-color: rgb(243, 243, 243);">
+        <div class="container " style="background-color: rgb(243, 243, 243);">
+            <div class="row pt-5">
+                <div class="col-sm-12 d-flex  pt-5">
+
+                    <hr class="border border-danger border-2" style="width: 50px;"> <i
+                        class="mt-2 ms-2 fst-normal text-info ">Hot
+                        Tours</i>
+
+                </div>
+                <div class="col-12">
+                    <h1>Popular Packages</h1>
+                </div>
+            </div>
+
+
+            <div class="row  pt-5 ">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-auto position-relative mt-5 ps-3 ">
+                    <img src="img/g1.jpg" alt="" height="400px" class="rounded">
+                    <div class="text position-absolute bottom-0 start-0 text-light ps-3">
+                        <h4 class="ms-4">Paris</h4>
+                        <p class="ms-4 pb-2">3Days, 4 Nights Start From <span class="text-warning">$750</span></p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 col-auto position-relative mt-5 ps-3">
+                    <img src="img/g2.jpg" alt="" height="400px" class="rounded">
+                    <div class="text position-absolute bottom-0 start-0 text-light">
+                        <h4 class="ms-4">Bankok</h4>
+                        <p class="ms-4 pb-2">2Days, 3 Nights Start From $650<span class="text-warning">$750</span></p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 col-auto position-relative mt-5">
+                    <img src="img/g3.jpg" alt="" height="400px" class="rounded">
+                    <div class="text position-absolute bottom-0 start-0 text-light">
+                        <h4 class="ms-4">Maldives</h4>
+                        <p class="ms-4 pb-2">2Days, 3 Nights Start From <span class="text-warning">$550</span></p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 col-auto position-relative mt-5 ps-3 pb-5 mb-5 ">
+                    <img src="img/g4.jpg" alt="" height="400px" class="rounded">
+                    <div class="text position-absolute bottom-0 start-0 text-light  ps-3  pb-2 mb-5 ">
+                        <h4 class="ms-4">Greece</h4>
+                        <p class="ms-4 pb-2">3Days, 4 Nights Start From <span class="text-warning">$950</span></p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 col-auto position-relative mt-5 pb-5 mb-5">
+                    <img src="img/g5.jpg" alt="" height="400px" class="rounded">
+                    <div class="text position-absolute bottom-0 start-0 text-light  pb-2 mb-5 ">
+                        <h4 class="ms-4">London</h4>
+                        <p class="ms-4 pb-2">2Days, 3 Nights Start From <span class="text-warning">$550</span></p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 col-auto position-relative mt-5 pb-5 mb-5">
+                    <img src="img/g6.jpg" alt="" height="400px" class="rounded">
+                    <div class="text position-absolute bottom-0 start-0 text-light  pb-2 mb-5 ">
+                        <h4 class="ms-4">Julian Alps</h4>
+                        <p class="ms-4 pb-2">3Days, 4 Nights Start From <span class="text-warning">$850</span></p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+
+    <div class="container">
+        <div class="col-lg-12 col-auto ps-5 ms-2 pt-5 mt-5">
+            <img src="img/vidio.jpg" height="500px" width="1200px" alt="">
+        </div>
+    </div>
+
+    <div class="container d-flex ">
+        <div class="col-7 ">
+            <div class="col-sm-7 ">
+                <div class="col-sm-7 d-flex pt-5">
+                    <hr class="border border-danger border-2" style="width: 50px;"> <i
+                        class="mt-2 ms-2 fst-normal text-info ">10-30% Off</i>
+                </div>
+            </div>
+            <div class="col-sm-7">
+                <h1>Find Your Perfect Vacation</h1>
+            </div>
+        </div>
+        <div class="col-5  pt-5">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur hic odio voluptatem tenetur
+                consequatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur hic odio voluptatem
+                tenetur consequatur adipisicing elit.</p>
+        </div>
+
+    </div>
+
+
+
+    <div class="col-sm-12 d-flex ">
+        <div class="container ">
+            <div class="row pt-5">
+                <div class="col-sm-12 d-flex  ">
+
+                    <hr class="border border-danger border-2" style="width: 50px;"> <i
+                        class="mt-2 ms-2 fst-normal text-info ">10-30% Off</i>
+
+                </div>
+                <div class="col-12">
+                    <h1>Book Now</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row pt-5 pb-5">
+
+            <div class="col-lg-4 col-md-6 col-sm-12  d-flex flex-column pt-3 ">
+                <label for="" class="">Name</label>
+                <input type="text" placeholder="Name" style="height: 40px;"
+                    class="name border-0 rounded-1 bg-secondary-subtle">
+
+            </div>
+            <div class="col-lg-4 d-flex flex-column pt-3">
+                <label for="">Destination</label>
+                <select name="" id="" style="height: 40px;" class="rounded-1 border-0 bg-secondary-subtle">
+                    <option value="">any</option>
+                    <option value="">Africa</option>
+                    <option value="">America</option>
+                    <option value="">Asia</option>
+                    <option value="">Europe</option>
+
+                </select>
+
+            </div>
+            <div class="col-lg-4 d-flex flex-column  pt-3">
+                <label for="">Activity</label>
+                <select name="" id="" style="height: 40px;" class="border-0 rounded-1 bg-secondary-subtle">
+                    <option value="">Any</option>
+                    <option value="">City Tours</option>
+                    <option value="">Cultural & Thematic Tours</option>
+                    <option value="">family-friendly Tours</option>
+                    <option value="">Outdoor Activity</option>
+                    <option value="">Wild & Adventure Tours</option>
+                    <option value="">Relaxtion Tours</option>
+
+
+                </select>
+
+            </div>
+            <div class="col-lg-4 d-flex flex-column pt-3">
+                <label for="">Duration</label>
+                <select name="" id="" style="height: 40px; " class=" rounded-1 border-0 bg-secondary-subtle">
+                    <option value="">1 Day tour</option>
+                    <option value="">2-4 Day tour</option>
+                    <option value="">5-7 Day tour</option>
+                    <option value="">7+ Day tour</option>
+                </select>
+
+            </div>
+            <div class="col-lg-4 d-flex flex-column pt-3">
+                <label for="">Date</label>
+                <input type="date" style="height: 40px;" class="rounded-1 border-0 bg-secondary-subtle">
+
+            </div>
+            <div class="col-lg-4 d-flex flex-column pt-3 ">
+                <label for="">Submit</label>
+                <input type="submit" value="Submit" class="border-0 rounded-1 text-white"
+                    style="background-color: rgb(27, 95, 122); height: 40px;">
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row pt-5  ">
+
+        <div class="col-lg-12 col-auto sea position-relative ">
+        </div>
+        <div class="col-lg-6  border border-primary"></div>
+        <div class="col-lg-6 col-sm-12 col-auto position-absolute  end-0 border border-primary">
+            <div class="col-sm-12 d-flex pt-5">
+
+                <hr class="border border-danger border-2 " style="width: 50px;">
+                <i class="mt-2 ms-2 fst-normal text-light">Lets Stay In Touch</i>
+
+            </div>
+            <h1 class="mt-2 text-light">Sign Up For 25% Discount</h1>
+            <p class="mt-3 text-light">Want to get an instant discount for your next tour? Leave your email and sign up
+                for
+                our newsletter with 25% off all our offers.
+
+
+            </p>
+            <div class="btn-group mt-2">
+
+                <input type="text" class="form-control" placeholder="Input group example"
+                    aria-label="Input group example" aria-describedby="btnGroupAddon">
+                <button class="border-0 btn-lg bg-danger submit">Submit</button>
+            </div>
+
+            <p class="lead  mt-4 text-light">Subscribe to our free weekly newsletter for new update releases (no spam)
+            </p>
+        </div>
+
+    </div>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 d-flex pt-5">
+
+                <hr class="border border-danger border-2 " style="width: 50px;"> <i
+                    class="mt-2 ms-2 fst-normal text-dark">Testimonials</i>
+
+            </div>
+            <div class="col-lg-12">
+                <h1>Feedback From Our Customers</h1>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container d-flex  pb-5 mb-5 ">
+        <div class="col-lg-3 col-sm-12 border border-2 rounded-2 lorem mx-lg-4" style="width: 370px;">
+            <!-- <i class="fa-solid fa-quote-left position-relative "></i> -->
+            <p class="p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis quaerat dicta
+                consequuntur alias delectus magni rem quam illum itaque nulla.</p>
+            <div class="peter d-flex ps-4">
+                <img src="https://p.w3layouts.com/demos_new/template_demo/04-04-2020/stroll-liberty-demo_Free/717367814/web/assets/images/t1.jpg"
+                    alt="" class="rounded-circle" style="height: 60px;">
+                <div class="text ms-5">
+                    <h5>Theo Hall</h5>
+                    <p>SEO Expert</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-12 border border-2 rounded-2 lorem mx-lg-4 " style="width: 370px;">
+            <p class="p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis quaerat dicta
+                consequuntur alias delectus magni rem quam illum itaque nulla.</p>
+            <div class="peter d-flex ps-4">
+                <img src="https://p.w3layouts.com/demos_new/template_demo/04-04-2020/stroll-liberty-demo_Free/717367814/web/assets/images/t2.jpg"
+                    alt="" class="rounded-circle" style="height: 60px;">
+                <div class="text ms-5">
+                    <h5>jenna johson</h5>
+                    <p>SEO Expert</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-12 border border-2 rounded-2 lorem mx-lg-4" style="width: 370px;">
+            <p class="p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis quaerat dicta
+                consequuntur alias delectus magni rem quam illum itaque nulla.</p>
+            <div class="peter d-flex ps-4">
+                <img src="https://p.w3layouts.com/demos_new/template_demo/04-04-2020/stroll-liberty-demo_Free/717367814/web/assets/images/t3.jpg"
+                    alt="" class="rounded-circle" style="height: 60px;">
+                <div class="text ms-5">
+                    <h5>Linda Carini</h5>
+                    <p>SEO Expert</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <details><summary>hii AVANI</summary></details>
+    <p><bdo dir="">avani tejani</bdo></p>
+    <p><abbr title="heloo avani">     hi      hello  avni</abbr></p>
+    <p><samp>hi avnI wow</samp></p>
+    <p>Press <kbd>alt</kbd> + <Kbd>Ctrl</Kbd></p> -->
+
+    
+    <!-- <div class="col-12 ">
+        <div class="container bg-dark text-light d-flex justify-content-evenly ms-5 pt-5 mb-5 mt-5">
+
+
+            <div class="col-2 ms-5 mt-5 ">
+
+                <h3 class="h4 mt-1 ms-5 ">Str<i class="fa-solid fa-earth-americas fs-5" style="color:red"></i>ll</h3>
+                <p class="ms-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur hic odio
+                    voluptatem tenetur
+                    consequatur.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <i class="fa-brands fa-facebook ms-5"></i>
+                <i class="fa-brands fa-linkedin-in ms-3"></i>
+                <i class="fa-brands fa-twitter ms-3"></i>
+                <i class="fa-brands fa-google-plus-g ms-3"></i>
+                <i class="fa-brands fa-github ms-3"></i>
+            </div>
+            <div class="col-2 mt-5 mb-5">
+                <h5>QUICK LINKS</h5>
+                <ul class="list-unstyled mt-1">
+
+                    <li class="mx-0"><i class="fa-solid fa-angles-right"></i>Home</li>
+                    <li class="mx-0"><i class="fa-solid fa-angles-right"></i>About</li>
+                    <li class="mx-0"><i class="fa-solid fa-angles-right"></i>Destinations</li>
+                    <li class="mx-0"><i class="fa-solid fa-angles-right"></i>Contact</li>
+                </ul>
+            </div>
+            <div class="col-2 mt-5 mb-5">
+                <h5>QUICK LINKS</h5>
+                <ul class="list-unstyled mt-1">
+
+                    <li class="mx-0"><i class="fa-solid fa-angles-right"></i>Live Chart</li>
+                    <li class="mx-0"><i class="fa-solid fa-angles-right"></i>Faq</li>
+                    <li class="mx-0"><i class="fa-solid fa-angles-right"></i>Support</li>
+                    <li class="mx-0"><i class="fa-solid fa-angles-right"></i>Terms of Services</li>
+                </ul>
+            </div>
+            <div class="col-4 mt-5 mb-5">
+                <h5>INSTAGRAM GALLERY</h5>
+                <div class="row">
+                    <div class="col-lg-3 col-auto mt-4 ">
+                        <img src="img/g1.jpg" alt="" height="115px" class="rounded">
+
+                    </div>
+                    <div class="col-lg-3 col-auto mt-4">
+                        <img src="img/g2.jpg" alt="" height="115px" class="rounded">
+
+                    </div>
+                    <div class="col-lg-4 col-auto mt-4">
+                        <img src="img/g3.jpg" alt="" height="115px" class="rounded">
+
+                    </div>
+                    <div class="col-lg-3 col-auto mt-4">
+                        <img src="img/g4.jpg" alt="" height="115px" class="rounded">
+
+                    </div>
+                    <div class="col-lg-3 col-auto mt-4">
+                        <img src="img/g5.jpg" alt="" height="115px" class="rounded">
+
+                    </div>
+                    <div class="col-lg-3 col-auto mt-4">
+                        <img src="img/g6.jpg" alt="" height="115px" class="rounded">
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div> -->
+
+</body>
+
+</html>

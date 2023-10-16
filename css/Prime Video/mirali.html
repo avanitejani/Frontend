@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+.all
+{
+    overflow: auto;
+    white-space: nowrap;
+    width: 100%;
+}
+.main{
+    position: relative;
+    width: 380px;
+    border-radius: 6px;
+    background-color: black;
+    color: white;
+  
+}
+.zoom {
+  padding: 50px;
+  background-image: url(Images/baby.jpg);
+  transition: transform .2s;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+.mira {
+    padding-top: 75px;
+    display: none;
+    width: 400px;
+    transition: .5s all ease;
+}
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+.main:hover .mira {
+    display: block;
+}
+</style>
+</head>
+<body>
+    <div class="all">
+  
+<div class="main">
+    <div class="zoom">  </div>
+    <div class="mira">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ratione quos officiis sunt facere reiciendis possimus labore porro quod recusandae?</p>
+    </div>
+</div>
+
+
+<div class="main">
+    <div class="zoom">  </div>
+    <div class="mira">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ratione quos officiis sunt facere reiciendis possimus labore porro quod recusandae?</p>
+    </div>
+</div>
+
+
+<div class="main">
+    <div class="zoom">  </div>
+    <div class="mira">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ratione quos officiis sunt facere reiciendis possimus labore porro quod recusandae?</p>
+    </div>
+</div>
+
+
+<div class="main">
+    <div class="zoom">  </div>
+    <div class="mira">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ratione quos officiis sunt facere reiciendis possimus labore porro quod recusandae?</p>
+    </div>
+</div>
+
+<div class="main">
+    <div class="zoom">  </div>
+    <div class="mira">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ratione quos officiis sunt facere reiciendis possimus labore porro quod recusandae?</p>
+    </div>
+</div>
+<div class="main">
+    <div class="zoom">  </div>
+    <div class="mira">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ratione quos officiis sunt facere reiciendis possimus labore porro quod recusandae?</p>
+    </div>
+</div>
+</div>
+
+</body>
+</html>
+
+
+
+<div class="scrollmenu">
+        
+    <div class="top">
+        <img src="Images/cake.jfif" alt="">
+        <!-- <div class="bottom">
+            <div class="t1">
+                <h4><i class="fa-solid fa-bag-shopping" style="color: #ffc800;"></i> Subscribe to Lionsgate Play for
+                    ₹699/year or rent</h4>
+            </div>
+            <div class="t2">
+                <h3>John Wick</h3>
+                <button id="b1">+</button>
+                <button id="b1">+</button>
+
+            </div>
+            <div class="t3">
+                <p> 2014 1 h 37 min<span>A</span></p>
+            </div>
+            <div class="t4">
+                <p>An ex-hit-man comes out of retirement to track down the gangsters that killed his dog and took
+                    his car.</p>
+            </div> -->
+    </div>
+
+
+    <div class="top">
+        <img src="Images/cake.jfif" alt="">
+    </div>
+
+
+
+
+</div>
+
+
+
+.scrollmenu {
+    background-color: #000000;
+}
+
+
+
+.scrollmenu  .top img {
+    height: 210px;
+}
+
+.scrollmenu {
+    background-color: #000000;
+    overflow: auto;
+    white-space: nowrap;
+    display: flex;
+}
+
+ .scrollmenu  .top img {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    border-radius: 25px;
+    /* margin-left: 50px; */
+    margin-top: 30px;
+}
+
+.scrollmenu  .top::-webkit-scrollbar {
+    width: 0;
+}

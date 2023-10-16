@@ -1,0 +1,461 @@
+@media(min-width:1400px){
+   /* header */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.header {
+    width: 100%;
+    position: relative;
+    
+    background-color: rgb(15, 15, 15);
+}
+.header .mainheader{
+    /* position: absolute; */
+    display: flex;
+    width: 55%;
+    margin-left: 22%;
+    flex-direction: unset;
+    justify-content: center;
+    color: whitesmoke;
+    background-color: rgb(19, 19, 19);
+    /* border: 1px solid red; */
+    border-radius: 10px;
+
+
+}
+
+.header .left {
+    width: 15%;
+    /* border: 1px solid red; */
+
+}
+
+.header .left img {
+
+    justify-content: left;
+    height: 23px;
+    /* float: left; */
+    padding-left: 20px;
+    margin-top: 18px;
+    /* border: 1px solid red; */
+
+}
+
+.header .right {
+    width: 84%;
+    /* border: 1px solid red; */
+
+}
+
+.header .right ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    text-align:center;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 20px;
+    /* justify-content: space-evenly; */
+    /* font-size: 20px; */
+    /* border: 1px solid red; */
+
+
+}
+
+
+
+/* .header .right .main ul li a {
+    text-decoration: none;
+    color: rgb(212, 212, 212);
+    text-align: center;
+    font-weight: bolder;
+
+
+} */
+.header .right  ul li a {
+    text-decoration: none;
+    color: rgb(212, 212, 212);
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: 300;
+    padding: 27px 25px;
+    /* border: 1px solid red; */
+
+}
+
+.header .right .main:hover {
+    color: white;
+    background-color: rgb(29, 29, 29);
+    height: 100%;
+    /* transition: color .2s ease-in-out; */
+
+
+}
+
+.header .right .find {
+    font-size: 20px;
+    margin: -22px 0px 0px 30px;
+    padding: 20px 20px 0px 20px;
+
+}
+
+.header .right .find:hover {
+    background-color: rgb(29, 29, 29);
+
+}
+
+.header .right .user {
+    padding: 13px 15px;
+    background-color: rgb(61, 93, 112);
+    border-radius: 50%;
+    margin-top: -10px;
+    margin-bottom: 10px;
+
+    transition: color .2s ease-in-out;
+
+}
+.header .right .mainuser{
+    padding: 0px 20px;
+
+}
+.header .right .mainuser:hover {
+    background-color: rgb(29, 29, 29);
+
+}
+
+
+
+/* ........................................drop 1...................... */
+
+.header .drop1 {
+    position: relative;
+}
+
+.header .d1 {
+    position: absolute;
+    top: 41px;
+    left: 0%;
+    display: none;
+    width: 100%;
+    height: 123px;
+    border-radius: 0px 0px 10% 10%;
+    padding-left: 0px;
+    z-index: 1;
+    background-color: rgb(29, 29, 29);
+
+
+
+}
+
+
+
+.header .d1 ul {
+    display: block;
+    width: 100%;
+    padding-left: 0px;
+    text-align: left;
+    padding-top: 0px;
+
+
+}
+
+.header .d1 ul li {
+    width: 95%;
+    text-align: left;
+    margin-top: 0px;
+    padding: 10px 0px;
+    /* border: 1px solid red; */
+
+}
+
+
+.header .drop1:hover .d1 {
+    display: block;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.header .d1 ul li:hover {
+    color: rgb(26, 26, 26);
+    width: 100%;
+    background-color: white;
+    border-radius: 0px 0px 10% 10%;
+
+}
+
+/* ............................................................................. */
+
+.header .drop2 {
+    position: relative;
+}
+
+.header .d2 {
+    position: absolute;
+    top: 41px;
+    display: none;
+    width: 100%;
+    height: 123px;
+    border-radius: 0px 0px 10% 10%;
+    padding-left: 0px;
+    z-index: 1;
+    background-color: rgb(29, 29, 29);
+
+}
+
+
+.header .d2 ul {
+    display: block;
+    width: 100%;
+    padding-left: 0px;
+    text-align: left;
+    padding-top: 0px;
+
+
+
+}
+
+.header .d2 ul li {
+    width: 95%;
+    text-align: left;
+    margin-top: 0px;
+    padding: 10px 0px;
+
+}
+
+.header .drop2:hover .d2 {
+    display: block;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.header .d2 ul li:hover {
+    color: rgb(26, 26, 26);
+    width: 100%;
+    background-color: white;
+    border-radius: 0px 0px 10% 10%;
+
+}
+
+
+/* .......................................drop d 3............................ */
+
+
+
+
+
+
+
+
+
+
+.header .drop3 {
+    position: relative;
+
+}
+
+.header .d3 {
+    position: absolute;
+    top: 41px;
+    left: -485px;
+    width: 1050px;
+    height: 350px;
+    border-radius: 0px 0px 10px 10px;
+    z-index: 1;
+    background-color: rgb(29, 29, 29);
+    display: none;
+
+}
+
+.header .d3 .parth {
+
+    display: flex;
+    width: 100%;
+}
+
+.header .drop3:hover .d3 {
+    display: block;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+
+}
+
+.header .d3 ul li:hover {
+    width: 75%;
+    background-color: white;
+    border-radius: 0px 0px 10% 10%;
+
+}
+
+.header .d3 ul li:hover a {
+    color: black;
+
+}
+
+.header .d3 .parth h3 {
+
+    color: white;
+    text-align: left;
+    margin-top: 0%;
+    height: 20px;
+    width: 100px;
+
+
+}
+
+.header .d3 .parth ul li {
+    width: 95%;
+    display: block;
+    text-align: left;
+    padding: 10px 0px;
+    padding-left: 0;
+
+}
+
+.header .d3 .parth .s1 {
+    display: flex;
+    flex-direction: column;
+    width: 28%;
+    margin-top: 5px;
+    padding-top: 35px;
+    padding-left: 15px;
+
+
+}
+
+.header .d3 .parth .s1 h3,
+.header .d3 .parth .s3 h3 {
+    padding-bottom: 20px;
+    height: 15px;
+
+}
+
+.header .d3 .parth .s2 {
+    display: flex;
+    flex-direction: column;
+    width: 28%;
+    margin-top: 5px;
+    padding-top: 38px;
+    padding-left: 15px;
+
+
+}
+
+.header .d3 .parth .s3,
+.header .d3 .parth .s4 {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding-top: 35px;
+    padding-left: 15px;
+    margin-right: 10px;
+
+
+}
+
+.header .d3 .parth .s2,
+.header .d3 .parth .s4 {
+
+    margin-top: 40px;
+
+}
+
+
+.header .d3 .sections .s1 li,
+.header .d3 .sections .s2 li {
+    width: 100%;
+}
+
+.header .d3 .sections .s1 li a,
+.header .d3 .sections .s2 li a {
+    width: 100%;
+}
+
+
+
+
+/* ................................ */
+
+
+.header .drop4 {
+    position: relative;
+
+}
+
+.header .d4 {
+    display: none;
+
+
+}
+
+.header .d4 .sections {
+    position: absolute;
+    top: 41px;
+    right: -130%;
+    width: 1050px;
+    height: 360px;
+    border-radius: 0px 0px 10px 10px;
+    z-index: 1;
+    background-color: rgb(29, 29, 29);
+    display: flex;
+    /* justify-content: center; */
+
+
+
+}
+
+.header .d4 .sections ul li {
+    width: 95%;
+    display: block;
+    text-align: left;
+    padding: 9px 0px;
+    padding-left: 0;
+
+}
+
+.header .d4 .sections .s1,
+.header .d4 .sections .s2,
+.header .d4 .sections .s3,
+.header .d4 .sections .s4 {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding-left: 29px;
+    /* padding-left: 15px; */
+
+}
+
+.header .drop4:hover .d4 {
+    display: block;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.header .d4 ul li:hover {
+    width: 95%;
+    background-color: white;
+    color: rgb(219, 0, 0);
+    border-radius: 0px 0px 10% 10%;
+
+}
+
+.header .d4 ul li:hover a {
+    color: black;
+
+}
+
+
+
+/* ................................................................................................................................. */
+
+
+
+
+
+
+
+
+/* ...........................................................end header................................................ */
+    
+}

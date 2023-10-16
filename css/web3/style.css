@@ -1,0 +1,58 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* header  */
+.header{
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid; */
+    background-color: red;
+
+}
+.header .left {
+    width: 30%;
+
+}
+
+.header .left h1 {
+     font-size: 50px;
+     margin: 10px;
+
+}
+.header .left h1 i{
+    font-size: 40px;
+}
+
+.header .right {
+    /* border: 1px solid; */
+    width: 70%;
+    display: flex;
+    justify-content: end;
+
+}
+#plus{
+    display: none;
+}
+
+    
+.header .right ul {
+  list-style: none;
+  display: flex;
+
+}
+.header .right ul li {
+    
+    margin: 30px 20px 0px 20px;
+    }
+.header .right ul a {
+    margin: 0px 20px;
+    font-size: 20px;
+    color: antiquewhite;
+  text-decoration: none;
+  }

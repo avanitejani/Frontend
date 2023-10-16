@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <input type="password" id="pswd">
+    <button id="btn">Show Password</button>
+
+
+    <script>
+        $(document).ready(function() {
+            $("#btn").click(function() {
+                let pswd = $("#pswd");
+                let pswdType = pswd.attr('type');
+                
+                if (pswdType === 'password') {
+                    pswd.attr('type', 'text');
+                    $("#btn").text('Hide Password');
+                } else {
+                    pswd.attr('type', 'password');
+                    $("#btn").text('Show Password');
+                }
+            });
+        });
+        </script>
+</body>
+</html>

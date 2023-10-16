@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <style>
+        button {
+            padding: 10px 20px;
+            background-color: rgb(185, 192, 218);
+        }
+
+        p {
+            height: 150px;
+            width: 150px;
+            background-color: cadetblue;
+            color: white;
+            text-align: center;
+
+        }
+    </style>
+    
+
+</head>
+<body>
+    
+    <button id="up">slide up</button>
+    <button id="down">slide down</button>
+    <button id="Toggle">slide Toggle</button>
+    <button id="stop">stop</button>
+
+    <p id="p1">
+        hi, wow!.... Lorem ipsum dolor sit amet
+        Lorem ipsum dolor sit amet.
+    </p>
+
+
+    <script>
+
+        $(document).ready(function(){
+            $("#up").click(function(){
+                $("#p1").slideUp(1000);
+            })
+            $("#down").click(function() {
+                $("#p1").slideDown(1000);
+            })
+             $("#Toggle").click(function() {
+                $("#p1").slideToggle(1000);
+            })
+            $("#stop").click(function() {
+                $("#p1").stop(1000, .5);
+            })
+        })
+
+    </script>
+</body>
+</html>

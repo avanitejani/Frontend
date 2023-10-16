@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    
+    <style> 
+    
+    div{
+        height: 100px;
+        width: 50px;
+        /* transition:  .6 all; */
+    }</style>
+  </head>
+  <body>
+    <button id="ani">ani</button>
+ <button id="mirali">Mirali</button>
+
+  <button id="parth">Parth</button>
+    <div style="background-color: red" id="p1">
+      <a id="a">Monika is good girl vidhis is very honest</a>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $("#ani").click(function () {
+          $("#p1").animate({
+          
+            marginLeft: '500px', 
+          width:"300px"
+                  
+        
+        
+        },3000,function() {
+                   $("#a").css({
+              "transition": " 2s all ease",
+              "font-size":"40px",
+              "color":"green"
+              
+        
+           });
+                 });
+         
+            
+        });
+
+       
+
+
+
+      
+      });
+    </script>
+  </body>
+</html>

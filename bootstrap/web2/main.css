@@ -1,0 +1,16 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.mira{
+    /* z-index: 1; */
+    position: relative;
+}
+.avani{
+    /* z-index: 2; */
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    /* background-color: red; */
+}

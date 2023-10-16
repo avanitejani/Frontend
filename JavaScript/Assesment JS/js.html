@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+// Input array
+let arr = ['hii', 'hello', 'wow', 'gret','fine'];
+     
+// Function to create object
+function obj(arr) {
+    // target object
+    let rv = {};
+    
+    for (let i = 0; i < arr.length; ++i)
+        // Assign each element to object
+        rv[i] = arr[i];
+    return rv;
+}
+// Display output
+console.log(JSON.stringify(obj(arr)));
+
+
+
+    </script>
+</body>
+</html>

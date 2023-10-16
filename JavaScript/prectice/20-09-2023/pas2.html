@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        label{
+            background-color:rgb(220, 253, 255);
+            color: cadetblue;
+            padding: 10px 30px;
+            border: 1px solid cadetblue;
+        }
+        input{
+            background-color:seashell;
+            color:darkcyan;
+            padding: 10px 30px;
+            border: none;
+            border: 1px solid darkcyan;
+
+
+        }
+       
+    </style>
+
+</head>
+
+<body>
+    <!-- show and hide password -->
+    <label for="input">password</label>
+    <input type="password" id="input1" placeholder="input your password">
+    <input type="checkbox" id="check">
+
+
+
+    <!-- <button id="show">Show</button><br><br> -->
+    
+    
+
+
+    <script>
+      
+        let input1 = document.getElementById("input1");
+        // let show = document.querySelector("#show");
+        // let check = document.querySelector("#check");
+        check.addEventListener("click", function() {
+            
+            if (input1.type === "password") {
+                input1.type = "text";
+                // show.textContent = "Hide";
+                // show.style.color="red";
+                
+         
+            } else {
+                input1.type = "password";
+                // show.textContent = "show";
+                // show.style.color="green";
+            }   
+
+        })
+
+
+
+    </script>
+</body>
+
+</html>

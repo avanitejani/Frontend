@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button onclick="">Click</button> -->
+    <button onclick="Click()">Click</button>
+    <button onclick="Click()">add</button>
+    <button onclick="Click()">sum</button>
+    <button id="btn">sum</button>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <button onclick="add(10,24)">Add</button>
+    <!-- <p id="p3"></p> -->
+    <!-- document object model  -->
+    <script>
+        // document.getElementById("p1").innerHTML="parth";
+
+        // function Click(){
+        //     document.getElementById("p1").innerHTML="parth";
+
+        // }
+        function add(a, b) {
+           document.write(a+b);
+        }
+        let btn = document.querySelector("#btn");
+        let p2 = document.querySelector("#p2");
+        btn.addEventListener("click", function () {
+            p2.innerHTML="parth";
+        })
+
+
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input1">
+    <input type="text" id="input2">
+    <button id="btn" onclick="add()">Add</button>
+    <p id="p1"></p>
+    <script>
+      
+       let p1 = document.querySelector("#p1")
+       let btn = document.querySelector("#btn")
+         //    btn.addEventListener("click",function(input1, input2){
+    //   ("#input2").value;
+    //         let sum = input1 - input2;
+    //          document.getElementById("p1").innerHTML = sum;
+    //    })
+       btn.addEventListener("click",add())
+       function add(){
+        let input1 =document.querySelector("#input1");
+       let input2 = document.querySelector("#input2");
+             let sum = Number(input1.value) - Number(input2.value);
+             document.getElementById("p1").innerHTML = sum
+       }
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

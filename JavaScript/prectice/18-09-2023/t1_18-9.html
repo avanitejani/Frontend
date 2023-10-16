@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="n1">
+    <input type="text" id="n2">
+    <button id="btn" onclick="add()">Add</button>
+
+    <p id="p1"></p>
+    <script>
+        let p1 = document.querySelector("#p1")
+        let btn = document.querySelector("#btn")
+
+        btn.addEventListener("click", add())
+        function add() {
+            let n1 = document.querySelector("#n1");
+            let n2 = document.querySelector("#n2");
+
+            let sum = Number(n1.value) - Number(n2.value);
+            document.getElementById("p1").innerHTML = sum
+
+        }
+
+    <button id="btn" onclick="max()">max</button>
+
+    // <button type="button" id="btn" onclick="max()"> max </button>
+    // <p id="big"></p>
+
+        btn.addEventListener("click", max())
+
+        function max() {
+
+            if (Number(n1.value) < Number(n2.value)) {
+                
+                document.write(" `$ {n2} is max");
+            }
+
+            else {
+
+                document.write("n1 is max");
+            }
+
+
+            // document.querySelector(#big).innerHTML ="`$ {n2} is max"
+        }
+
+    </script>
+</body>
+
+</html>

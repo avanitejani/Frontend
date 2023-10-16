@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <style>
+        button {
+            padding: 10px 20px;
+            background-color: rgb(185, 192, 218);
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <button id="ani">ani</button>
+    <button id="ani2">ani2</button>
+    <button id="ani3">ani3</button>
+
+    <div style="background-color: cadetblue; height: 100px; width: 100px; color: white; text-align: center;" id="p1">
+        <a id="a">hyy, wow!.... seri...</a>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("#ani").click(function () {
+                $("#p1").animate({
+                    marginLeft: '500px',
+                    // width: "200px",
+                    hight: "500px",
+                    // opacity: '0.5',
+                    // height: '250px',
+                    // width: '250px'
+
+                }, 3000, function () {
+                    $("#a").css({
+                        
+                        "transition": " 2s all ease",
+                        "font-size": "30px",
+                        "color": "black",
+                        "height":"200px",
+                        "width":"200px",
+                        "opacity":"0.5"
+
+                    });
+                });
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>

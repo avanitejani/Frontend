@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- cdn jquery  -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- bx slider cdn  -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.css"
+      integrity="sha512-rV4fiystTwIvs71MLqeLbKbzosmgDS7VU5Xqk1IwFitAM+Aa9x/8Xil4CW+9DjOvVle2iqg4Ncagsbgu2MWxKQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.js"
+      integrity="sha512-no2/KDsCWSGu0LVyWVdwha859xFOn1K8oLPIi2O6gxIv5fQ704L2pQh5H8X4PpTEzjGD58/M7TYwdf8LWeSQKw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <style>
+      img {
+        height: 300px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bxslider">
+      <div>
+        <img
+          src="https://images.pexels.com/photos/17815587/pexels-photo-17815587/free-photo-of-woman-in-flora-dress-sitting-at-table-in-restaurant.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+          title="Coffee 1"
+        />
+      </div>
+      <div>
+        <img
+          src="https://images.pexels.com/photos/7619517/pexels-photo-7619517.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+          title="Coffee 2"
+        />
+      </div>
+      <div>
+        <img
+          src="https://images.pexels.com/photos/18693471/pexels-photo-18693471.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+          title="Coffee 3"
+        />
+      </div>
+
+      <script>
+        $(function () {
+          $(".bxslider").bxSlider({
+            // mode: 'fade',
+            captions: true,
+            slideWidth: 1200,
+            auto: true,
+            autoControls: true,
+            stopAutoOnClick: true,
+          });
+        });
+      </script>
+    </div>
+  </body>
+</html>

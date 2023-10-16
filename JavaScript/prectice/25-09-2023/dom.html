@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- dom document object model  -->
+    
+    <button onclick="alert('hi')">Save</button>
+    <button id="btn">Aarth</button>
+    <p id="p1"></p>
+    <h1 id="h1"></h1>
+    <script>
+        let  para = document.getElementById("p1");
+        let  h1 = document.getElementById("h1");
+        let  BTN = document.getElementById("btn");
+        BTN.addEventListener("click", function() {
+            // document.write("Hemali");
+            // console.log("Avni");
+            para.innerHTML= "<p>Hello</p>"
+            h1.innerText= "<p>Hello</p>"
+        });
+       
+
+
+    </script>
+</body>
+</html>

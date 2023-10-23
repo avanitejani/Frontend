@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT Marksheet Calculator</title>
+</head>
+
+
+<body>
+  <h1>Marksheet For Information Technologic</h1>
+  <form id="marksheet">
+    <div>
+      <label for="name">Student Name:</label>
+      <input type="text" id="name" required>
+    </div>
+
+    <div>
+        <label for="c">C Language</label>
+        <input type="number" id="c" min="0" max="100" required>
+      </div>
+      <div>
+        <label for="c++">C++ Language</label>
+        <input type="number" id="c++" min="0" max="100" required>
+      </div>
+      <div>
+        <label for="database">Database</label>
+        <input type="number" id="database" min="0" max="100" required>
+      </div>
+      <div>
+        <label for="html">HTML</label>
+        <input type="number" id="html" min="0" max="100" required>
+      </div>
+
+      <div>
+        <label for="css">CSS</label>
+        <input type="number" id="css" min="0" max="100" required>
+      </div>
+
+      <div>
+        <label for="php">php</label>
+        <input type="number" id="php" min="0" max="100" required>
+      </div>
+
+      <div>
+        <label for="js">Core Java</label>
+        <input type="number" id="js" min="0" max="100" required>
+      </div>
+
+    <button type="button" id="btn">Calculate</button>
+
+  </form>
+  <div id="result"></div>
+
+  <script>
+    const form = document.getElementById("marksheet");
+    const calculateButton = document.getElementById("btn");
+    const resultDiv = document.getElementById("result");
+ 
+    calculateButton.addEventListener("click", calculateMarksheet);
+
+    function calculateMarksheet() {
+        const c = parseFloat(document.getElementById("c").value);
+        const c2 = parseFloat(document.getElementById("c++").value);
+        const database = parseFloat(document.getElementById("database").value);
+        const html = parseFloat(document.getElementById("html").value);
+        const css = parseFloat(document.getElementById("css").value);
+        const php = parseFloat(document.getElementById("php").value);
+        const js = parseFloat(document.getElementById("js").value);
+
+      if ( isNaN(c) || isNaN(c2) || isNaN(database) || isNaN(html) || isNaN(css) || isNaN(php) || isNaN(js) ) {
+        resultDiv.innerHTML = "Please enter valid marks.";
+        return;
+      }
+
+      const totalMarks = c + c2 + database +html +css +php +js;
+      const percentage = (totalMarks / 300) * 100; // Assuming a maximum of 100 marks for each subject
+
+      const name = document.getElementById("name").value;
+      resultDiv.innerHTML = `
+        <h2>Result for ${name}</h2>
+        
+        <p>Total Marks: ${totalMarks}</p>
+        <p>Percentage: ${percentage.toFixed(2)}%</p>
+      `;
+    }
+  </script>
+</body>
+</html>

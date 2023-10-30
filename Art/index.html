@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Art</title>
+
+  <!-- bootstrap link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+  <!-- font-awesome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+      .header{
+        background-image: url(img/slider.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 900px; /* You can adjust the height as needed */
+        color: #fff; /* Set text color to contrast with the background image */
+        text-align: center;
+        padding: 20px 0px;
+      }
+    </style>
+
+</head>
+
+<body>
+  <!-- auto <576 
+    sm   >576 
+    md   >768 
+    lg   >992
+    xl  >1200px
+    xxl >1400px -->
+
+  <div class="header container-fluid ">
+    <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+      <div class="bg-dark p-4">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+          <div class="container-fluid ">
+            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="fa-solid fa-bars fa-2xl" style="color: #ffffff;">
+            </button>
+            <div class="collapse navbar-collapse justify-content-around  " id="navbarNavDropdown" >
+              <ul class="navbar-nav justify-content-around container-fluid" >
+            <!-- <div class="collapse navbar-collapse " id="navbarNavDropdown"> -->
+                <li class="nav-item " style="border: 1px solid rgb(0, 187, 255); padding: 30px;">
+                  <a class="nav-link active " aria-current="page" href="#" >Home</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link active"aria-current="page" href="#">about us</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link active"aria-current="page" href="#">gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active"aria-current="page" href="#">shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active"aria-current="page" href="#">blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active"aria-current="page" href="#">contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active"aria-current="page" href="#">shortcodes</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Dropdown link
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <nav class="navbar navbar-dark bg-transparent">
+      <!-- <div class="container-fluid justify-content-start">
+                    <img src="img/" alt="">
+                  </div> -->
+      <div class="container-fluid ">
+        <img class="justify-content-start" src="img/logo.png" alt="">
+
+        <button class="navbar-toggler justify-content-end border border-0" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="fa-solid fa-bars fa-xl" style="color: #ffffff;"></span>
+        </button>
+      </div>
+    </nav>
+  </div>
+
+</body>
+
+</html>

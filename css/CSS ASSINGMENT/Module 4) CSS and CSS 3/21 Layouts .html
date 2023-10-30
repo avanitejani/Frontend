@@ -1,0 +1,140 @@
+<!-- Create Layouts  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layouts </title>
+
+  <style>
+    .section {
+      width: 100%;
+      background-color: rgb(233, 233, 233);
+    }
+
+    .card-img {
+      height: 200px;
+      width: 100%;
+    }
+
+    .grid-container {
+      justify-content: center;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-template-rows: auto auto auto;
+      row-gap: 30px;
+      column-gap: 30px;
+    }
+    .grid-container .item {
+      background-color: white;
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      .grid-container {
+        grid-template-columns: auto auto;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .grid-container {
+        grid-template-columns: auto;
+      }
+      .card-img {
+        width: 100%;
+      }
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+  <div class="section">
+    <div class="grid-container">
+      <div class="item">
+        <div class="card" style="width: 18rem;">
+          <img src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            class="card-img" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+              <button>view</button>
+              <button>Edit</button>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://images.pexels.com/photos/3932844/pexels-photo-3932844.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+            class="card-img" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+              <button>view</button>
+              <button>Edit</button>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card" style="width: 18rem;">
+          <img src="https://images.pexels.com/photos/712513/pexels-photo-712513.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            class="card-img" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+              <button>view</button>
+              <button>Edit</button>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://images.pexels.com/photos/4427884/pexels-photo-4427884.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            class="card-img" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+              <button>view</button>
+              <button>Edit</button>
+
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://images.pexels.com/photos/2248498/pexels-photo-2248498.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            class="card-img" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+              <button>view</button>
+              <button>Edit</button>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card" style="width: 18rem;">
+          <img src="https://images.pexels.com/photos/9909206/pexels-photo-9909206.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            class="card-img" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+              <button>view</button>
+              <button>Edit</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>

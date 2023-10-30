@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -6,7 +6,7 @@
 }
 
 /* header  */
-.header{
+.header {
 
     width: 100%;
     display: flex;
@@ -15,17 +15,19 @@
     background-color: red;
 
 }
+
 .header .left {
     width: 30%;
 
 }
 
 .header .left h1 {
-     font-size: 50px;
-     margin: 10px;
+    font-size: 50px;
+    margin: 10px;
 
 }
-.header .left h1 i{
+
+.header .left h1 i {
     font-size: 40px;
 }
 
@@ -36,23 +38,31 @@
     justify-content: end;
 
 }
-#plus{
+
+#plus {
+    display: block;
+    height: 35px;
+    width: 50px;
+
+}
+#home{
     display: none;
 }
 
-    
 .header .right ul {
-  list-style: none;
-  display: flex;
+    list-style: none;
+    display: flex;
 
 }
+
 .header .right ul li {
-    
+
     margin: 30px 20px 0px 20px;
-    }
+}
+
 .header .right ul a {
     margin: 0px 20px;
     font-size: 20px;
     color: antiquewhite;
-  text-decoration: none;
-  }
+    text-decoration: none;
+}

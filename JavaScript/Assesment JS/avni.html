@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function myFunction(array){
+        console.log(array);
+    let found = {}
+    let sum=0
+        for(let i = 0; i< array.length; i++){
+            let keys = array[i].toString()
+        found[keys]  = ++found[array[i]] || 1
+        sum += array[i];
+           }
+            return sum
+            return found
+    
+    }
+    console.log(myFunction([1,4,4,4,5,3,3,3]));
+
+
+</script>
+
+</body>
+</html>

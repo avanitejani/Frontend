@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Wb App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: steelblue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .main{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #box{
+            width: 40%;
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .row{
+            width: 100%;
+            margin: 1rem;
+            margin-left: 0;
+        }
+        .btn{
+            width: 100%;
+            padding: 5px;
+            background-color: steelblue;
+            font-size: 20px;
+            color: white;
+            border:none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div id="box">
+            <h2 id="quesBox">this is dummy question</h2>
+            <div class="row">
+                <input class="options" id="option1" type="radio" value="a" name="option" />
+                <label for="option1"> Opation 1</label>
+            </div>
+            <div class="row">
+                <input class="options" id="option2" type="radio" value="b" name="option" />
+                <label for="option2"> Opation 2</label>
+            </div>
+            <div class="row">
+                <input class="options" id="option3" type="radio" value="c" name="option" />
+                <label for="option3"> Opation 3</label>
+            </div>
+            <div class="row">
+                <input class="options" id="option4" type="radio" value="d" name="option" />
+                <label for="option4"> Opation 4</label>
+            </div>
+            <button id="" class="btn">Submit</button>
+        </div>
+    </div>
+
+
+
+    <script>
+        const questions =[{
+            'que': "What is the capital of India?",
+            'a': "Delhi",
+            'b': "Mumbai",
+            'c': "Bangalore",
+            'd': "Chennai",
+            'correct': "a"
+        },
+        {
+            'que': "What is the capital of USA?",
+            'a': "New York",
+            'b': "Los Angeles",
+            'c': "Chicago",
+            'd': "Houston",
+            'correct': "c"
+        },
+        {
+            'que': "What is the capital of Australia?",
+            'a': "Canberra",
+            'b': "Melbourne",
+            'c': "Sydney",
+            'd': "Brisbane",
+            'correct': "b"
+        },
+        {
+            'que': "What is the capital of China?",
+            'a': "Beijing",
+            'b': "Shanghai",
+            'c': "Shenzhen",
+            'd': "Guangzhou",
+            'correct': "d"
+        },
+        {
+            'que': "What is the capital of Japan?",
+            'a': "Tokyo",
+            'b': "Kyoto",
+            'c': "Osaka",
+            'd': "Nagoya",
+            'correct': "a"
+        },
+        {
+            'que': "What is the capital of Russia?",
+            'a': "Beijing",
+            'b': "Saint Petersburg",
+            'c': "Moscow",
+            'd': "Tokyo",
+            'correct': "c"
+        },
+       
+
+       
+    ]
+
+    let index = 0;
+    const quesBox = document.getElementById('quesBox');
+    const optionInputs = document.querySelectorAll('options');
+    const loadQuestion = () => {
+        const data = questions[index];
+        console.log(data);
+        quesBox.innerText = `${index+1}. ${data.que}`;   // `  ` ghis is backtrace
+        optionInputs[0].nextElementSibling.innerText = data.a;
+        optionInputs[1].nextElementSibling.innerText = data.b;
+        optionInputs[2].nextElementSibling.innerText = data.c;
+        optionInputs[3].nextElementSibling.innerText = data.d;
+
+    }
+
+    const submitQuiz = () => {
+        const ans = getAnswer()
+    }
+    const getAnswer = () => {
+        optionInputs.forEach(
+            (input) => {
+               if (input.checked){
+                console.log('yes');
+               }
+               else{
+                console.log('no');
+               }
+            }
+        )
+    }
+
+    // inital call 
+    loadQuestion();
+
+    </script>
+
+</body>
+</html>

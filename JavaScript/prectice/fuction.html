@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .h1
+        {
+        
+        } */
+    </style>
+</head>
+<body>
+
+<!-- 6th december 2023 -->
+
+    <h1 id="h1">hii </h1>
+   
+
+    <script>
+//  <!-- typ of function  -->
+
+
+// named function  
+
+function sum(a,b){
+    console.log(a+b);
+}
+sum(2,3)
+
+
+// anonymus function 
+var sum =function(){
+    console.log(5);
+}
+console.log(sum);
+
+
+// immidate function 
+(function(){
+    console.log(5);
+})
+
+(function(a){
+    console.log(a);
+})(7)
+
+
+//  arro function  
+
+function name(){  // how to write othe
+
+}
+
+() => {  // how to write erro
+
+}
+
+
+const name = (avani) => {
+    console.log(avani);
+}
+name(8)
+
+// setTimeout
+// setInterval
+
+
+
+// setTimeout
+
+setTimeout(() => {
+    console.log(5);
+}, 1000);
+
+
+setTimeout(() => {
+    document.getElementById("h1").innerText='after 2 second i am printed'
+}, 2000);
+
+// setInterval
+setInterval(() => {
+    console.log('avni tejani');
+}, 2000);
+
+
+
+var i=0
+var id = setInterval(() => {
+    document.getElementById('head').innerText = i
+
+    if(i == 10)
+    clearInterval(id)
+}, 1000);
+
+</script>
+
+</body>
+</html>

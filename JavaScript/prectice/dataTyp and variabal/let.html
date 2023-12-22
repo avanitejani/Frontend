@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //let   ecma script 6 (es6)
+        let age = 20
+        age = 30
+        //   let age = 21   // error
+        // same variable cant define many times
+        // scoped variable
+        let a = 5
+        let b = 10
+        if (false) {
+            let a = 7
+            let b = 12
+            console.log(a)
+        } else {
+            console.log(a)
+        }
+
+        let i = 5
+        let c = 5
+        for (let i = 0; i < 10; i++) {
+            let b = 10
+            console.log(b)
+            console.log(i)
+        }
+    </script>
+</body>
+
+</html>

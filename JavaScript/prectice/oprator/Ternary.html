@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // Ternary Operator
+        // The “Question mark” or “conditional” operator in JavaScript is a ternary operator that has three operands.It is the simplified operator of if/else.
+
+        // Examples:
+
+        // Input: let result = (10 > 0) ? true : false;
+        // Output: true
+        // Input: let message = (20 > 15) ? "Yes" : "No";
+        // Output: Yes
+
+        // Syntax:
+        // condition ? value if true : value if false
+
+
+        function gfg() {
+            // JavaScript to illustrate 
+            // Conditional operator 
+            let PMarks = 40
+            let result = (PMarks > 39) ?
+                "Pass" : "Fail";
+
+            console.log(result);
+        }
+        gfg();
+
+
+
+
+        function gfg() {
+            // JavaScript to illustrate
+            // multiple Conditional operators
+
+            let marks = 95;
+            let result = (marks < 40) ? "Unsatisfactory" :
+                (marks < 60) ? "Average" :
+                    (marks < 80) ? "Good" : "Excellent";
+
+            console.log(result);
+        }
+        gfg();
+
+    </script>
+</body>
+
+</html>

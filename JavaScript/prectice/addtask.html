@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="box1">
+        <div class="box">
+            <input type="text" id="input">
+            <button onclick="addItem()">add</button>
+        </div>
+        <div class="box2" id="data">
+
+        </div>
+    </div>
+
+    <script>
+
+    // method 2
+
+        function addItem() {
+            let adddata = document.getElementById('input').value
+            let five = document.createElement('h5')
+            five.innerHTML = addData
+            document.getElementById('data').append(five)
+            document.getElementById('input').value = ""
+
+
+            // with upper case 
+
+            let addData = document.getElementById('input').value
+            let hfive = document.createElement('h5')
+            let uppr = addData.toUpperCase()
+            hfive.innerHTML = uppr
+
+            document.getElementById("data").append(hfive)
+            document.getElementById("input").value = ''
+
+        }
+
+
+        // method 1
+        
+            // let item = []
+            // function addItem() {
+            //     let addData = document.getElementById('input').value
+            //     item.push(addData)
+                
+            //     str = ''
+            //     for (let i = 0; i < item.length; i++) {
+            //         // str += '<h5>' + item[i] + '</h5>'
+            //         str += item[i]
+            //     }
+            //     console.log(str);
+            //     document.getElementById('data').innerHTML = str
+            //     document.getElementById('input').value = ' '
+            // }
+
+    </script>
+</body>
+
+</html>

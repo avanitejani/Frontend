@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <style>
+        .calculator{
+            height: 600px;
+            width: 300px;
+            background-color: black;
+            text-align: center;
+            margin: auto;
+        }
+        .h2{
+                 
+            /* background-color: black; */
+            text-align: center;
+            margin: auto;
+
+        
+        }
+        input {
+            width: 70px;
+            height: 50px;
+            margin: 5px 0px ;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2 class="h2">Simple Calculator</h2>
+<div class="calculator">
+    <form name="calculator" >
+        <input type="text" name="display" id="display" readonly>
+        <br>
+        <input type="button" value="7" onclick="appendToDisplay('7')">
+        <input type="button" value="8" onclick="appendToDisplay('8')">
+        <input type="button" value="9" onclick="appendToDisplay('9')">
+        <input type="button" value="/" onclick="appendToDisplay('/')">
+        <br>
+        <input type="button" value="4" onclick="appendToDisplay('4')">
+        <input type="button" value="5" onclick="appendToDisplay('5')">
+        <input type="button" value="6" onclick="appendToDisplay('6')">
+        <input type="button" value="-" onclick="appendToDisplay('-')">
+        <br>
+        <input type="button" value="1" onclick="appendToDisplay('1')">
+        <input type="button" value="2" onclick="appendToDisplay('2')">
+        <input type="button" value="3" onclick="appendToDisplay('3')">
+        <input type="button" value="+" onclick="appendToDisplay('+')">
+        <br>
+        <input type="button" value="0" onclick="appendToDisplay('0')">
+        <input type="button" value="." onclick="appendToDisplay('.')">
+        <input type="button" value="=" onclick="calculate()">
+        <input type="button" value="C" onclick="clearDisplay()">
+    </form>
+    </div>
+
+    <script>
+        function appendToDisplay(value) {
+            document.calculator.display.value += value;
+        }
+
+        function calculate() {
+            try {
+                document.calculator.display.value = eval(document.calculator.display.value);
+            } catch (error) {
+                document.calculator.display.value = 'Error';
+            }
+        }
+
+        function clearDisplay() {
+            document.calculator.display.value = '';
+        }
+    </script>
+
+
+
+
+
+</body>
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+
+    <style>
+        button {
+            color: maroon;
+            background-color: #FFFAFA;
+            border: none;
+            padding: 10px 20px;
+            justify-content: center;
+
+        }
+
+        input {
+            color: maroon;
+            background-color: #FFF0F5;
+            border: none;
+            padding: 10px 60px;
+            justify-content: center;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- <h1>Simple Calculator</h1> -->
+
+    <!-- Input fields for two digits -->
+    <!-- <label for="num1">Enter first number:</label> -->
+    <input type="number" id="num1" placeholder="enter 1st digits" /><br /><br />
+
+    <!-- <label for="num2">Enter second number:</label> -->
+    <input type="number" id="num2" placeholder="enter 2nd digits" /><br /><br />
+
+    <!-- Buttons for operations -->
+    <button onclick="add()">Addition</button>
+    <button onclick="subtract()">Subtraction</button>
+    <button onclick="multiply()">multiplication</button>
+    <button onclick="divide()">division</button>
+
+    <br /><br />
+
+    <!-- Result display -->
+    <p id="result"></p>
+
+    <script>
+
+        function add() {
+            let num1 = parseFloat(document.getElementById('num1').value);
+            let num2 = parseFloat(document.getElementById('num2').value);
+            let result = num1 + num2;
+            document.getElementById('result').textContent = "Addition Result: " + result;
+        }
+
+
+        function subtract() {
+            let num1 = parseFloat(document.getElementById('num1').value);
+            let num2 = parseFloat(document.getElementById('num2').value);
+            let result = num1 - num2;
+            document.getElementById('result').textContent = "Subtraction Result: " + result;
+        }
+
+
+        function multiply() {
+            let num1 = parseFloat(document.getElementById('num1').value);
+            let num2 = parseFloat(document.getElementById('num2').value);
+            let result = num1 * num2;
+            document.getElementById('result').textContent = "Multiplication Result: " + result;
+        }
+
+
+        function divide() {
+            let num1 = parseFloat(document.getElementById('num1').value);
+            let num2 = parseFloat(document.getElementById('num2').value);
+            //   let result = num1 / num2;
+            //   document.getElementById('result').textContent = "Result: " / result;
+
+            if (num2 === 0) {
+                document.getElementById('result').textContent = "Cannot divide by zero";
+            } else {
+                let result = num1 / num2;
+                document.getElementById('result').textContent = "Division Result: " + result;
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>
+
+
+</html>
+
+
+</body>
+</html>

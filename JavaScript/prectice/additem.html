@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box1">
+        <div class="box">
+            <input type="text" id="input">
+            <button onclick="addItem()">add</button>
+        </div>
+        <div class="box2" id="data">
+    
+        </div>
+    </div>
+
+
+
+<script>
+     function addItem() {
+           
+
+            let addData = document.getElementById('input').value
+            let hfive = document.createElement('h5')
+            let uppr = addData.toUpperCase()
+            hfive.innerHTML = uppr
+
+            document.getElementById("data").append(hfive)
+            document.getElementById("input").value = ''
+
+        }
+
+
+
+
+         function addItem() {
+                let addData = document.getElementById('input').value;
+                if (addData.trim() !== '') {
+                    let div = document.createElement('div');
+                    let hfive = document.createElement('h5');
+                    let deleteBtn = document.createElement('button');
+
+                    let uppr = addData.toUpperCase();
+                    hfive.innerHTML = uppr;
+                    deleteBtn.innerHTML = 'delete';
+                    deleteBtn.onclick = function () {
+                        div.remove();
+                    };
+
+                    div.appendChild(hfive);
+                    div.appendChild(deleteBtn);
+                    document.getElementById("data").appendChild(div);
+
+                    document.getElementById("input").value = '';
+                }
+            }
+
+
+    
+</script>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <style>
+
+             html {
+        scroll-behavior: smooth;
+      }
+      body {
+        position: relative;
+      }
+
+            button {
+                height: 50px;
+                width: 50px;
+                background-color: rgb(46, 37, 28);
+                color: wheat;
+                position: fixed;
+                bottom: 10px;
+                right: 10px;
+                display: none;
+                transition: all 2s;
+            }
+            a{
+                color: wheat; padding: 20px; text-decoration: none; font-size: 25px;
+            }
+        </style>
+</head>
+
+<body>
+    <div class="hed" style="background-color: rgb(46, 37, 28);  height: 7%; padding-top: 20px; text-align: center; padding-bottom: 20px;">
+        <a href="">avani</a>
+        <a href="">avni</a>
+        <a href="">ani</a>
+        <a href="">an</a>
+    </div>
+    <img src="https://images.pexels.com/photos/2088210/pexels-photo-2088210.jpeg?auto=compress&cs=tinysrgb&w=300" alt="">
+    <img src="https://images.pexels.com/photos/2088210/pexels-photo-2088210.jpeg?auto=compress&cs=tinysrgb&w=300" alt="">
+    <img src="https://images.pexels.com/photos/2088210/pexels-photo-2088210.jpeg?auto=compress&cs=tinysrgb&w=300" alt="">
+    <img src="https://images.pexels.com/photos/2088210/pexels-photo-2088210.jpeg?auto=compress&cs=tinysrgb&w=300" alt="">
+    <img src="https://images.pexels.com/photos/2088210/pexels-photo-2088210.jpeg?auto=compress&cs=tinysrgb&w=300" alt="">
+    <img src="https://images.pexels.com/photos/2088210/pexels-photo-2088210.jpeg?auto=compress&cs=tinysrgb&w=300" alt="">
+    <img src="https://images.pexels.com/photos/1212487/pexels-photo-1212487.jpeg?auto=compress&cs=tinysrgb&w=300" alt="">
+    <img src="https://images.pexels.com/photos/1212487/pexels-photo-1212487.jpeg?auto=compress&cs=tinysrgb&w=300" alt="">
+    <img src="https://images.pexels.com/photos/1212487/pexels-photo-1212487.jpeg?auto=compress&cs=tinysrgb&w=300" alt="">
+    <img src="https://images.pexels.com/photos/1212487/pexels-photo-1212487.jpeg?auto=compress&cs=tinysrgb&w=300" alt="">
+    <img src="https://images.pexels.com/photos/1212487/pexels-photo-1212487.jpeg?auto=compress&cs=tinysrgb&w=300" alt="">
+    <img src="https://images.pexels.com/photos/1212487/pexels-photo-1212487.jpeg?auto=compress&cs=tinysrgb&w=300" alt="">
+    <img src="https://images.pexels.com/photos/1261731/pexels-photo-1261731.jpeg?auto=compress&cs=tinysrgb&w=300" alt=''>
+    <img src="https://images.pexels.com/photos/1261731/pexels-photo-1261731.jpeg?auto=compress&cs=tinysrgb&w=300" alt=''>
+    <img src="https://images.pexels.com/photos/1261731/pexels-photo-1261731.jpeg?auto=compress&cs=tinysrgb&w=300" alt=''>
+    <img src="https://images.pexels.com/photos/1261731/pexels-photo-1261731.jpeg?auto=compress&cs=tinysrgb&w=300" alt=''>
+    <img src="https://images.pexels.com/photos/1261731/pexels-photo-1261731.jpeg?auto=compress&cs=tinysrgb&w=300" alt=''>
+    <img src="https://images.pexels.com/photos/1261731/pexels-photo-1261731.jpeg?auto=compress&cs=tinysrgb&w=300" alt=''>
+    <img src="https://images.pexels.com/photos/4668521/pexels-photo-4668521.jpeg?auto=compress&cs=tinysrgb&w=300" alt="">
+    <img src="https://images.pexels.com/photos/4668521/pexels-photo-4668521.jpeg?auto=compress&cs=tinysrgb&w=300" alt="">
+    <img src="https://images.pexels.com/photos/4668521/pexels-photo-4668521.jpeg?auto=compress&cs=tinysrgb&w=300" alt="">
+    <img src="https://images.pexels.com/photos/4668521/pexels-photo-4668521.jpeg?auto=compress&cs=tinysrgb&w=300" alt="">
+    <img src="https://images.pexels.com/photos/4668521/pexels-photo-4668521.jpeg?auto=compress&cs=tinysrgb&w=300" alt="">
+    <img src="https://images.pexels.com/photos/4668521/pexels-photo-4668521.jpeg?auto=compress&cs=tinysrgb&w=300" alt="">
+    
+    <button onclick="gotoTop()" id="top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <footer>
+        <div style="width: 100%;color: rgb(46, 37, 28); background-color: wheat;height: 150px;">
+
+            <h1>hii i'm footer</h1>
+        </div>
+    </footer>
+
+    
+
+    <script>
+        const scrollWINDOW = () => {
+            console.log(window.scrollY)
+            if (window.scrollY > 180) {
+                document.getElementById('top').style.display = 'block'
+            } else {
+                document.getElementById('top').style.display = 'none'
+            }
+        }
+        window.addEventListener('scroll', () => {
+            scrollWINDOW()
+        })
+
+        const gotoTop = () => {
+            window.scrollTo(0, 0)
+        }
+    </script>
+</body>
+</html>

@@ -353,55 +353,6 @@
 }
 
 
-
-
-/* section9 */
-
-.section9 {
-  width: 100%;
-  margin: auto;
-          display: flex;
-}
-
-.section9 .left {
-  width: 50%;
-  
-}
-
-.section9 .left img {
-  height: 400px;
- 
-}
-
-.section9 .right {
-  width: 50%;
-
-}
-
-.section9 .right h1 {
-  font-weight: 400;
-  padding: 10px 0px;
-  font-size: 40px;
-}
-
-.section9 .right p {
-  font-weight: 300;
-  padding: 2px 0px;
-  font-size: 14px;
-}
-
-.section9 .form-control {
-  border-radius: 0%;
-  width: 300px;
-  border: none;
-  height: 50px;
-}
-
-.section9 .submit {
-  width: 100px;
-}
-
-
  
  }
 

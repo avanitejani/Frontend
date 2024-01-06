@@ -1,0 +1,160 @@
+@media(min-width:1200px) {
+    /* header  */
+
+
+    .section5 {
+        background-color: black;
+        width: 100%;
+        display: flex;
+        flex-direction: unset;
+        height: 100%;
+        padding: 0px 0px 0px 0px;
+            margin: 0px 0px -5.5% 0px;
+    }
+
+    .section5 .left {
+        position: relative;
+        width: 50%;
+        height: 100%;
+        
+    }
+
+    .section5 .left .line {
+        position: absolute;
+        top: 5%;
+        left: 2.5%;
+        padding: 21% 47%;
+    }
+
+    .section5 .right {
+        width: 50%;
+        height: 100%;
+        
+    }
+
+    .section5 h1 {
+        font-size: 40px;
+        margin-top: 10%;
+    }
+
+    .section5 p {
+        width: 100%;
+        font-size: 13px;
+        text-align: center;
+        padding: 4% 2% 0 2%;
+
+    }
+
+
+
+    .section5 .btn ul {
+
+        width: 100%;
+        display: flex;
+        list-style: none;
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+
+    }
+
+    .section5 .btn ul li {
+        width: 100%;
+        text-align: center;
+        display: list-item;
+        margin: 15px 5px;
+
+    }
+
+    .section5 .btn ul a {
+        font-size: 14px;
+        width: 100%;
+        display: inline-block;
+        text-decoration: none;
+        padding: 8px 20px;
+        text-align: center;
+    }
+
+    .section5 .btn ul a i {
+        padding-left: 10px;
+    }
+
+    /* 6666666666666666666666666 */
+
+        .section6 {
+            background-color: black;
+            width: 100%;
+            display: flex;
+            flex-direction: unset;
+            height: 100%;
+            padding: 0px 0px 0px 0px;
+                margin: 0px 0px -5.5% 0px;
+        }
+    
+        .section6 .right {
+            position: relative;
+            width: 50%;
+            height: 100%;
+           
+        }
+    
+        .section6 .right .line {
+            position: absolute;
+            top: 5%;
+            left: 2.5%;
+            padding: 21% 47%;
+        }
+    
+        .section6 .left {
+            width: 50%;
+            height: 100%;
+            
+        }
+    
+        .section6 h1 {
+            font-size: 40px;
+            margin-top: 10%;
+        }
+    
+        .section6 p {
+            width: 100%;
+            font-size: 13px;
+            text-align: center;
+            padding: 4% 2% 0 2%;
+    
+        }
+    
+    
+    
+        .section6 .btn ul {
+    
+            width: 100%;
+            display: flex;
+            list-style: none;
+            margin: 0px 0px 0px 0px;
+            padding: 0px 0px 0px 0px;
+    
+        }
+    
+        .section6 .btn ul li {
+            width: 100%;
+            text-align: center;
+            display: list-item;
+            margin: 15px 5px;
+    
+        }
+    
+        .section6 .btn ul a {
+            font-size: 14px;
+            width: 100%;
+            display: inline-block;
+            text-decoration: none;
+            padding: 8px 20px;
+            text-align: center;
+        }
+    
+        .section6 .btn ul a i {
+            padding-left: 10px;
+        }
+
+
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5px;
+            position: relative;
+            width: 50%;
+            height: 500px;
+            border: 1px solid #ccc;
+            background-color: black;
+        }
+
+        .itemf1 {
+            color: #ccc;
+        }
+
+        .itemf1 .relative-image {
+            position: relative;
+            height: 40%;
+            display:block;
+        }
+
+        .itemf1 .absolute-image {
+            position: absolute;
+            top: 25px;
+            left: 32px;
+            /* width: 200px; */
+            height: 30%;
+            display: block;
+        }
+
+        .itemf2 {
+            color: #ccc;
+        }
+
+        .itemf2 .relative-image {
+            position: relative;
+            width: 88%;
+            height: 70%;
+            display: block;
+        }
+
+        .itemf2 .absolute-image {
+            position: absolute;
+            top: 35px;
+            left: 36%;
+            /* width: 200px; */
+            height: 57%;
+            display: block;
+        }
+
+
+        .itemf3 {
+            color: #ccc;
+        }
+
+        .itemf3 .relative-image {
+            position: relative;
+            width: 88%;
+            height: 45%;
+            display: block;
+        }
+
+        .itemf3 .absolute-image {
+            position: absolute;
+            top: 17px;
+            left: 69%;
+            width: 25%;
+            height: 38%;
+            display: block;
+        }
+
+        .itemf4 {
+         /* background-color: #ccc; */
+            color: #ccc;
+        }
+
+        .itemf4 .relative-image {
+            position: relative;
+            /* width: 88%; */
+            height: 75%;
+            display: block;
+        }
+
+        .itemf4 .absolute-image {
+            position: absolute;
+            top: 17px;
+            left: 69%;
+            /* width: 25%; */
+            height: 48%;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="itemf1">
+            <img class="relative-image" src="img/gold-frame.png" alt="Relative Image">
+            <img class="absolute-image" src="img/frame-img1.jpg" alt="Absolute Image">
+        </div>
+        <div class="itemf2">
+            <img class="relative-image" src="img/plastic-frame.png" alt="Relative Image">
+            <img class="absolute-image" src="img/frame-img2.jpg" alt="Absolute Image">
+        </div>
+        <div class="itemf3">
+            <img class="relative-image" src="img/steel-frame.png" alt="Relative Image">
+            <img class="absolute-image" src="img/frame-img3.jpg" alt="Absolute Image">
+        </div>
+        <!-- <div class="itemf4">
+            <img class="relative-image" src="img/wooden-frame.png" alt="Relative Image">
+            <img class="absolute-image" src="img/frame-img4.jpg" alt="Absolute Image">
+        </div> -->
+        <!-- <div class="itemf5">
+            <img class="relative-image" src="img/wooden-frame (1).png" alt="Relative Image">
+            <img class="absolute-image" src="img/frame-img5.jpg" alt="Absolute Image">
+        </div> -->
+
+    </div>
+
+</body>
+
+</html>

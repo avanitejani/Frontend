@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>art new</title>
+
+  <!-- bootstrap link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+  <!-- font-awesome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="576max.css">
+  <link rel="stylesheet" href="576minstyle.css">
+  <link rel="stylesheet" href="768style.css">
+  <link rel="stylesheet" href="992style.css">
+  <link rel="stylesheet" href="1080style.css">
+
+
+
+
+  <style>
+    .monika {
+      /* background-color: black !important; */
+      background: rgba(0, 0, 0, .8) !important;
+      color: red !important;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- <img src="img/logo.png" alt=""> -->
+
+  <!-- <div class="art  position-relative ">
+    <div class="img "><img src="img/slider.jpg" alt="" ></div>
+  </div> -->
+  <div class=" back position-relative"></div>
+
+
+  <div class="header container-fluid position-absolute top-0 position-fixed  ">
+    <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+      <div class="bg-dark">
+
+        <header>
+          <div class="mithi">
+            <ul>
+
+              <li class="drop1">
+                <a id="m1" href="" style="color: black;"><span id="icon1" class="fa-solid fa-house-chimney"
+                    style="color: #c4c2c2;"></span> <span id="sr" style="color: maroon;">[</span> HOME </span><span
+                    id="sl" style="color: maroon;">]</span></a>
+                <ul class="Gallery">
+                  <li><a href="gallery-detail.html"><span id="sr">[</span> Gallery detail <span id="sl">]</span></a>
+                  </li>
+                  <li><a href="gallery-detail-with-lhs.html"><span id="sr">[</span> Gallery-detail-left-sidebar <span
+                        id="sl">]</span></a></li>
+                  <li><a href="gallery-detail-with-rhs.html"><span id="sr">[</span> Gallery-detail-right-sidebar <span
+                        id="sl">]</span></a></li>
+                  <li><a href="gallery-detail-with-rhs.html"><span id="sr">[</span> Gallery-detail-right-sidebar <span
+                        id="sl">]</span></a></li>
+
+                </ul>
+              </li>
+
+
+
+              <li>
+                <a href=""><span id="icon" class="fa-solid fa-user-secret" style="color: #d4d4d4;"></span> <span
+                    id="sr">[</span> ABOUT US </span><span id="sl">]</span></a>
+              </li>
+
+
+              <li class="drop1">
+                <a href="gallery.html"><span id="icon" class="fa-solid fa-camera-retro" style="color: #d4d4d4;"></span>
+                  <span id="sr">[</span> GALLERY </span><span id="sl">]</span></a>
+
+                <ul class="Gallery">
+                  <li><a href="gallery-detail.html"><span id="sr">[</span> Gallery detail <span id="sl">]</span></a>
+                  </li>
+                  <li><a href="gallery-detail-with-lhs.html"><span id="sr">[</span> Gallery-detail-left-sidebar <span
+                        id="sl">]</span></a></li>
+                  <li><a href="gallery-detail-with-rhs.html"><span id="sr">[</span> Gallery-detail-right-sidebar <span
+                        id="sl">]</span></a></li>
+
+                </ul>
+
+
+              </li>
+
+
+              <li class="drop1">
+                <a href=""><span id="icon" class="fa-solid fa-cart-plus" style="color: #d4d4d4;"></span> <span
+                    id="sr">[</span> SHOP </span><span id="sl">]</span></a>
+                <ul class="Gallery">
+                  <li><a href="gallery-detail.html"><span id="sr">[</span> Gallery detail <span id="sl">]</span></a>
+                  </li>
+                  <li><a href="gallery-detail-with-lhs.html"><span id="sr">[</span> Gallery-detail-left-sidebar <span
+                        id="sl">]</span></a></li>
+                  <li><a href="gallery-detail-with-rhs.html"><span id="sr">[</span> Gallery-detail-right-sidebar <span
+                        id="sl">]</span></a></li>
+
+                </ul>
+              </li>
+
+
+              <li class="drop1">
+                <a href=""><span id="icon" class="fa-solid fa-square-pen" style="color: #d4d4d4;"></span> <span
+                    id="sr">[</span> BLOG </span><span id="sl">]</span></a>
+                <ul class="Gallery">
+                  <li><a href="gallery-detail.html"><span id="sr">[</span> Gallery detail <span id="sl">]</span></a>
+                  </li>
+                  <li><a href="gallery-detail-with-lhs.html"><span id="sr">[</span> Gallery-detail-left-sidebar <span
+                        id="sl">]</span></a></li>
+                  <li><a href="gallery-detail-with-rhs.html"><span id="sr">[</span> Gallery-detail-right-sidebar <span
+                        id="sl">]</span></a></li>
+
+                </ul>
+              </li>
+
+
+              <li>
+                <a href=""><span id="icon" class="fa-solid fa-location-dot" style="color: #d4d4d4;"></span> <span
+                    id="sr">[</span> CONTACT </span><span id="sl">]</span></a>
+              </li>
+
+
+              <li class="drop1">
+                <a href=""><span id="icon" class="fa-solid fa-paintbrush" style="color: #d4d4d4;"></span> <span
+                    id="sr">[</span> SHORTCODES </span><span id="sl">]</span></a>
+                <ul class="Gallery">
+                  <li><a href="gallery-detail.html"><span id="sr">[</span> Gallery detail <span id="sl">]</span></a>
+                  </li>
+                  <li><a href="gallery-detail-with-lhs.html"><span id="sr">[</span> Gallery-detail-left-sidebar <span
+                        id="sl">]</span></a></li>
+                  <li><a href="gallery-detail-with-rhs.html"><span id="sr">[</span> Gallery-detail-right-sidebar <span
+                        id="sl">]</span></a></li>
+                  <li><a href="gallery-detail-with-lhs.html"><span id="sr">[</span> Gallery-detail-left-sidebar <span
+                        id="sl">]</span></a></li>
+                  <li><a href="gallery-detail-with-rhs.html"><span id="sr">[</span> Gallery-detail-right-sidebar <span
+                        id="sl">]</span></a></li>
+
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+
+
+
+          2
+        </header>
+
+
+      </div>
+    </div>
+    <nav id="avani" class="navbar navbar-dark bg-transparent ">
+
+      <div class="container-fluid ">
+        <img class="justify-content-start p-3 ms-5" src="img/logo.png" alt="">
+
+        <button id="btn" class="navbar-toggler justify-content-end me-5" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="fa-solid fa-bars fa-xl " style="color: white;"></span>
+        </button>
+
+
+
+
+      </div>
+    </nav>
+
+
+
+
+
+
+  </div>
+
+
+  <div class=" mithi2 container-fluid position-absolute top-0 position-fixed">
+
+    <div class="imglogo">
+      <img class="imglogo1" src="img/logo.png" alt="">
+    </div>
+
+    <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+      <div class="tejani   ms-5">
+        <ul class="">
+          <li class="d-flex justify-content-between ">
+            <a href="" class="a1 ">HOME</a>
+            <a href="" class="s2 text-end">+</a>
+          </li>
+          <li class="d-flex justify-content-between ">
+            <a href="" class="a1 ">ABOUT US</a>
+            <a href="" class="s2 text-end"></a>
+          </li>
+          <li class="d-flex justify-content-between ">
+            <a href="" class="a1 ">GALLERY</a>
+            <a href="" class="s2 text-end">+</a>
+          </li>
+          <li class="d-flex justify-content-between ">
+            <a href="" class="a1 ">SHOP</a>
+            <a href="" class="s2 text-end">+</a>
+          </li>
+          <li class="d-flex justify-content-between ">
+            <a href="" class="a1 ">BLOG</a>
+            <a href="" class="s2 text-end">+</a>
+          </li>
+          <li class="d-flex justify-content-between ">
+            <a href="" class="a1 ">CONTACT</a>
+            <a href="" class="s2 text-end"></a>
+          </li>
+          <li class="d-flex justify-content-between ">
+            <a href="" class="a1 ">SHORTCODES</a>
+            <a href="" class="s2 text-end">+</a>
+          </li>
+
+
+        </ul>
+      </div>
+    </div>
+    <nav class="menu navbar navbar-dark bg-dark" style="background-color: black;">
+      <div class=" container-fluid " style="background-color: black;">
+        <button class="m2 ms-5">MENU</button>
+
+        <button id="" class="m1 navbar-toggler justify-content-end me-5" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="fa-solid fa-bars fa-xl " style="color: white;"></span>
+        </button>
+      </div>
+    </nav>
+
+  </div>
+
+  <!-- <img src="img/slider.jpg" alt=""> -->
+
+  <div class="section2 container-fluid p-5">
+    <div class="container justify-content-center text-center ">
+      <div class="titel text-light">
+        <h1>Portfolio</h1>
+        <p class="fst-italic"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+      </div>
+      <div class="imgline container">
+        <img src="img/title-line.png" alt="">
+      </div>
+      <div class="btn ">
+        <ul class="btn2">
+          <li>
+            <a href="#" class="hover1">All</a>
+          </li>
+          <li>
+            <a href="#" class="hover1">Nature</a>
+          </li>
+          <li>
+            <a href="#" class="hover1">People</a>
+          </li>
+          <li>
+            <a href="#" class="hover1">Street</a>
+          </li>
+          <li>
+            <a href="#" class="hover1">StilLife</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <div class="portfolio-grid">
+    <div class="dt-sc-portfolio-container isotope" style="position: relative; overflow: hidden; height: 1064px;">
+      <div class="portfolio nature still-life dt-sc-one-fourth isotope-item"
+        style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px);">
+        <figure>
+          <img src="img/img-1.jpg" alt="" title="">
+          <figcaption>
+            <div class="portfolio-detail">
+              <div class="views">
+                <a class="fa fa-camera-retro" data-gal="prettyPhoto[gallery]"
+                  href="images/portfolio-images/img-1.jpg"></a><span>3</span>
+              </div>
+              <div class="portfolio-title">
+                <h5><a href="gallery-detail.html">Proposing Love</a></h5>
+                <p>Sample text here looks good</p>
+              </div>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="portfolio nature people street dt-sc-one-fourth isotope-item"
+        style="position: absolute; left: 0px; top: 0px; transform: translate3d(433px, 0px, 0px);">
+        <figure>
+          <img src="img/img-2.jpg" alt="" title="">
+          <figcaption>
+            <div class="portfolio-detail">
+              <div class="views">
+                <a class="fa fa-camera-retro" data-gal="prettyPhoto[gallery]"
+                  href="images/portfolio-images/img-2.jpg"></a><span>7</span>
+              </div>
+              <div class="portfolio-title">
+                <h5><a href="gallery-detail-with-lhs.html">Brave Man</a></h5>
+                <p>A cowboy is a man with guts</p>
+              </div>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="portfolio street landscapes still-life dt-sc-one-fourth isotope-item"
+        style="position: absolute; left: 0px; top: 0px; transform: translate3d(866px, 0px, 0px);">
+        <figure>
+          <img src="img/img-3.jpg" alt="" title="">
+          <figcaption>
+            <div class="portfolio-detail">
+              <div class="views">
+                <a class="fa fa-camera-retro" data-gal="prettyPhoto[gallery]"
+                  href="images/portfolio-images/img-3.jpg"></a><span>9</span>
+              </div>
+              <div class="portfolio-title">
+                <h5><a href="gallery-detail-with-rhs.html">Mountain Ride</a></h5>
+                <p>the swagger of a cowboy</p>
+              </div>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="portfolio nature still-life dt-sc-one-fourth isotope-item"
+        style="position: absolute; left: 0px; top: 0px; transform: translate3d(1299px, 0px, 0px);">
+        <figure>
+          <img src="img/img-4.jpg" alt="" title="">
+          <figcaption>
+            <div class="portfolio-detail">
+              <div class="views">
+                <a class="fa fa-camera-retro" data-gal="prettyPhoto[gallery]"
+                  href="images/portfolio-images/img-4.jpg"></a><span>5</span>
+              </div>
+              <div class="portfolio-title">
+                <h5><a href="gallery-detail.html">River Ride</a></h5>
+                <p>Live Free, Ride Hard!!</p>
+              </div>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="portfolio people still-life dt-sc-one-fourth isotope-item"
+        style="position: absolute; left: 0px; top: 0px; transform: translate3d(866px, 339px, 0px);">
+        <figure>
+          <img src="img/img-5.jpg" alt="" title="">
+          <figcaption>
+            <div class="portfolio-detail">
+              <div class="views">
+                <a class="fa fa-camera-retro" data-gal="prettyPhoto[gallery]"
+                  href="images/portfolio-images/img-5.jpg"></a><span>6</span>
+              </div>
+              <div class="portfolio-title">
+                <h5><a href="gallery-detail-with-lhs.html">Ride Hard</a></h5>
+                <p>Saddle your horse</p>
+              </div>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="portfolio people still-life dt-sc-one-fourth isotope-item"
+        style="position: absolute; left: 0px; top: 0px; transform: translate3d(1299px, 403px, 0px);">
+        <figure>
+          <img src="img/img-6.jpg" alt="" title="">
+          <figcaption>
+            <div class="portfolio-detail">
+              <div class="views">
+                <a class="fa fa-camera-retro" data-gal="prettyPhoto[gallery]"
+                  href="images/portfolio-images/img-6.jpg"></a><span>1</span>
+              </div>
+              <div class="portfolio-title">
+                <h5><a href="gallery-detail-with-rhs.html">Black Rider</a></h5>
+                <p>No reason to ride a horse</p>
+              </div>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="portfolio people nature still-life street dt-sc-one-fourth isotope-item"
+        style="position: absolute; left: 0px; top: 0px; transform: translate3d(433px, 431px, 0px);">
+        <figure>
+          <img src="img/img-7.jpg" alt="" title="">
+          <figcaption>
+            <div class="portfolio-detail">
+              <div class="views">
+                <a class="fa fa-camera-retro" data-gal="prettyPhoto[gallery]"
+                  href="images/portfolio-images/img-7.jpg"></a><span>5</span>
+              </div>
+              <div class="portfolio-title">
+                <h5><a href="gallery-detail.html">Stay single</a></h5>
+                <p>Make Way</p>
+              </div>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="portfolio nature people street still-life dt-sc-one-fourth isotope-item"
+        style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 691px, 0px);">
+        <figure>
+          <img src="img/img-8.jpg" alt="" title="">
+          <figcaption>
+            <div class="portfolio-detail">
+              <div class="views">
+                <a class="fa fa-camera-retro" data-gal="prettyPhoto[gallery]"
+                  href="images/portfolio-images/img-8.jpg"></a><span>12</span>
+              </div>
+              <div class="portfolio-title">
+                <h5><a href="gallery-detail-with-lhs.html">Born to Ride</a></h5>
+                <p>Cowboys are born, ain't made!</p>
+              </div>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="portfolio street nature people still-life dt-sc-one-fourth isotope-item"
+        style="position: absolute; left: 0px; top: 0px; transform: translate3d(866px, 725px, 0px);">
+        <figure>
+          <img src="img/img-9.jpg" alt="" title="">
+          <figcaption>
+            <div class="portfolio-detail">
+              <div class="views">
+                <a class="fa fa-camera-retro" data-gal="prettyPhoto[gallery]"
+                  href="images/portfolio-images/img-9.jpg"></a><span>15</span>
+              </div>
+              <div class="portfolio-title">
+                <h5><a href="gallery-detail-with-rhs.html">Stand Tall</a></h5>
+                <p>Hard to Settle!!</p>
+              </div>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <script>
+
+
+    $(document).ready(function () {
+
+      $("#btn").click(function () {
+        console.log("hi");
+        $("#avani").toggleClass("monika");
+      })
+    });
+
+  </script>
+
+</body>
+
+</html>

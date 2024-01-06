@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>callback2</title>
+</head>
+<body>
+    <script>
+         //Example 2
+            function sum(a, b, c, callback) {
+              return callback(a + b, c)
+            }
+
+            function multi(a, b) {
+              return a * b
+            }
+            let a = prompt('a')
+            let b = prompt('b')
+            let c = prompt('c')
+            let add = sum(Number(a), Number(b), Number(c), multi)
+            console.log(add)
+    </script>
+</body>
+</html>

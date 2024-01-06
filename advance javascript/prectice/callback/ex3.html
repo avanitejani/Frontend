@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>callback3</title>
+</head>
+<body>
+    <script>
+        // Example 3
+
+            function sum(a, b, callback) {
+              return callback(a + b, 4)
+            }
+
+            function multi(a, b) {
+              return a * b
+            }
+
+            function div(a, b) {
+              return a / b
+            }
+
+            function mod(a, b) {
+              return a % b
+            }
+
+            let c = sum(5, 5, div)
+            let d = mod(3, 5)
+
+            console.log(c)
+            console.log(d)
+    </script>
+</body>
+</html>

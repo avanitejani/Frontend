@@ -911,33 +911,22 @@ display: block;
 
  /* section9 */
 
- .section9{
+ /* .section9{
   background-color: black;
-  width: 100%;
-  margin: auto;
-          display: flex;
-}
-.section9 .left{
-  width: 50%;
-  /* border: 2px solid maroon; */
 }
 .section9 .left img{
     background-color: black;
     height: 500px;
-    margin-left:5%;
-  /* border: 2px solid rgb(109, 128, 0); */
 }
 
 .section9 .right {
   background-color: black;
-    width: 50%;
+  width: 620px;
   color: white;
-  /* border: 2px solid maroon; */
 }
 .section9 .right h1{
   font-weight: 400;
   padding: 10px 0px;
-  font-size: 45px;
 }
 .section9 .right p {
   font-weight: 300;
@@ -955,26 +944,18 @@ display: block;
   width: 100px;
   color: #fff;
 }
-
-
-
-/* srction 10 */
 .section10 {
   background-color: black;
   padding: 5% 0px;
   width: 100%;
-}
 
+}
 .section10 img{
   background-attachment:unset;
   background-repeat: repeat;
   width: 475px;
-}
+  }
 
-
-
-
-/* footer  */
   .footer{
     background-color: black;
     text-align: center;
@@ -999,12 +980,4 @@ display: block;
     color: #5a5a5a !important;       
      }
 
-     .footer a{
-      color: white;
-        text-decoration: none;
-     }
-     .footer .payment a{
-      color: #ffffff50;
-      font-size: 30px;
-     }
-
+ */

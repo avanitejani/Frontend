@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>callback1</title>
+</head>
+<body>
+    <script>
+        // Example 1
+        // function sum(a, b) {
+        //   return a + b
+        // }
+
+        // function multi(a, b) {
+        //   console.log(a * b)
+        // }
+
+        // let add = sum(4, 5) // aa value sum name na function a and b ma jase jeno sum a+b =9 
+        // multi(add, 6) // variable add ni value j 9 thy multi name na function a ma jase and 6 b ma aetle a*b (9*6)=54
+
+    //   callback function example 1
+
+        function sum(a, b, callback) {
+            console.log(a);
+            console.log(b);
+          callback(a + b, 4)  // a+b=7 a multi name na funcyin ma (a) ma jase and callvack=4 a (b) ma 
+        }
+
+        function multi(a, b) {
+            console.log(a); // a=7 a sum na a+b mathi ayva
+            console.log(b); // b=4 a callback 4 mathi ayva
+          console.log(a * b) 
+        }
+
+        sum(3, 4, multi) // aa value sum name na function a and b ma jase jeno sum a+b (3+4)=7 ---> 
+    </script>
+</body>
+</html>

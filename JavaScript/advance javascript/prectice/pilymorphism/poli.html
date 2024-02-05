@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- polymorphism - polymorphism means the seme function with different signatures is called many times. 
+    alg alg clss na seme function vala name ne call krava mate-->
+
+
+<script>
+
+    class A {
+            add() {
+                console.log('this is first method')
+            }
+        }
+
+        class B extends A {
+            add() {
+                super.add()
+                //   console.log('this is second method')
+            }
+        }
+
+        const obj = new B()
+        //   const objA = new A()
+        obj.add()
+        //   objA.add()
+
+</script>
+
+   
+</body>
+</html>

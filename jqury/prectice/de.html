@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- cdn jquery    -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <style>
+        .parth {
+            border: 1px solid;
+            margin: 20px;
+            padding: 10px;
+        }
+
+        ul,
+        li,
+        a,
+        span {
+            border: 1px solid red;
+            margin: 20px;
+            padding: 10px;
+        }
+
+        ul {
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parth">
+        <ul>
+            <li class="vidhi">
+                <a href="">
+                    <span>Parth</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span>Parth</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <button id="child">child</button>
+    <button id="childs">childs</button>
+
+    <button id="select">select</button>
+    <button id="find">find</button>
+
+
+    <script>
+        $(document).ready(function () {
+            $("#child").click(function () {
+                $("div")
+                    .children()
+                    .css({ color: "red", "background-color": "yellow" });
+            });
+
+            $("#childs").click(function () {
+                $("ul").children().css({ color: "red", "background-color": "green" });
+            });
+
+            $("#select").click(function () {
+                $("ul").children("li.vidhi")
+                    .css({ color: "red", "background-color": "green" });
+            });
+
+            $("#find").click(function () {
+                $("div").find(".vidhi")
+                    .css({ color: "red", "background-color": "blue" });
+            });
+
+
+        });
+    </script>
+</body>
+
+</html>

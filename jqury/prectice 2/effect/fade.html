@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        p,
+        span {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="in">Fade in Effect</button>
+    <button id="out">Fade out Effect</button>
+    <button id="toggle">Fade Toggle</button>
+    <button id="to">Fade to</button>
+    <p id="fin">
+        this is fade in
+    </p>
+
+    <span>
+        fade in and out in one button
+    </span>
+    <p id="fadeto">
+
+        this efect are fade to (fade to- befour print data after after aply css)
+
+        <br>
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsam cupiditate alias ipsa corrupti dolore
+        deleniti sed repudiandae doloremque laudantium, ipsum debitis fugit iure ex architecto id aperiam fugiat
+        commodi?
+    </p>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+
+        //fade mai data print hone ke bad effect work krti hai 
+        // and hide and show me working effect k sath data print hota hai 
+
+        $(document).ready(() => {
+            $('#in').click(() => {
+                $('#fin').fadeIn(3000)
+            })
+            $('#out').click(() => {
+                $('#fin').fadeOut(3000)
+            })
+
+            $('#toggle').click(() => {
+                $('span').fadeToggle(3000)
+            })
+
+
+            // callback - after complete fade in color will change
+
+            $('#to').click(() => {
+                $('#fadeto').fadeTo('slow', 0.6, () => {
+                    $('#fadeto').css('color', 'green')
+                })
+            })
+        })
+    </script>
+</body>
+
+</html>

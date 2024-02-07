@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- cdn jquery    -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <style>
+        .box {
+            border: 1px solid;
+            margin: 20px;
+            padding: 10px;
+        }
+
+        ul,
+        li,
+        a,
+        span {
+            border: 1px solid red;
+            margin: 20px;
+            padding: 10px;
+        }
+
+        ul {
+            list-style: none;
+        }
+        a{
+            display: flex;
+            justify-content: center;
+        }
+        span{
+            display: flex;
+            justify-content: center;
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body> body
+    <div class="box"> div
+        <ul> ul
+            <li class="vidhi"> li
+                <a href=""> a
+                    <span>span</span>
+                </a>
+            </li>
+            <li>li
+                <a href="">a
+                    <span>span</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <button id="child">child</button>
+    <button id="childs">childs</button>
+
+    <button id="select">select</button>
+    <button id="find">find</button>
+
+
+    <script>
+        $(document).ready(function () {
+            $("#child").click(function () {
+                $("div")
+                    .children()
+                    .css({ color: "red", "background-color": "yellow" });
+            });
+
+            $("#childs").click(function () {
+                $("ul").children().css({ color: "red", "background-color": "thistle" });
+            });
+
+            $("#select").click(function () {
+                $("ul").children("li.vidhi")
+                    .css({ color: "red", "background-color": "salmon" });
+            });
+
+            $("#find").click(function () {
+                $("div").find(".vidhi")
+                    .css({ color: "red", "background-color": "rgb(241, 250, 178)" });
+            });
+
+
+        });
+    </script>
+</body>
+
+</html>

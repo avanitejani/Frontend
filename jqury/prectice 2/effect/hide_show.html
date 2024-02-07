@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        p {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="text">Show Text</button>
+    <button id="hidetext">Hide Text</button>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quas
+        delectus placeat sequi, itaque in, cumque, quos non velit inventore
+        repellendus voluptatum? Soluta nesciunt fugiat saepe similique vel
+        deleniti tenetur!
+    </p>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+
+        //  hide and show me working effect k sath data print hota hai 
+        //and fade mai data print hone ke bad effect work krti hai
+
+        $(document).ready(() => {
+            // hide show effect
+
+            // chain method work with show method
+            $('#text').click(() => {
+                $('p')
+                    .show(3000)
+                    .css('background-color', 'pink')
+                    .css('font-size', '30px')
+                    .css('font-weight', 'light')
+                    .css('color', 'white')
+            })
+            $('#hidetext').click(() => {
+                $('p').hide(2000)
+            })
+
+
+        })
+
+    </script>
+</body>
+
+</html>

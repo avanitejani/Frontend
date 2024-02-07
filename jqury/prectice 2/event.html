@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>event</title>
+</head>
+<style>
+    body {
+        height: 300vh;
+    }
+</style>
+
+<body>
+   
+
+    All click event 
+    <br>
+
+    <button id="click">click</button>
+    <button id="dblclick">dblclick</button>
+    <button id="mouseover">mouseover</button>
+    <button id="mouseleave">mouseleave</button>
+    <button id="mouseup">mouseup</button>
+    <button id="mousedown">mousedown</button>
+    <br><br>
+    keybord event <br>
+
+    <h3>keypress</h3>
+    <input id="kp" type="text" placeholder="keypress" />
+    <h1 id="keypress"></h1>
+
+    <h3>keypdown</h3>
+    <input id="kd" type="text" placeholder="keypdown"/>
+    <h1 id="keypdown"></h1>
+
+    <h3>keyup</h3>
+    <input id="ku" type="text" placeholder="keyup" />
+    <h1 id="keyup"></h1>
+    <br><br>
+    form event
+
+    <h3>form event</h3>
+    <input id="fom" type="text" placeholder="form event" />
+    <h1 id="form"></h1>
+    <br><br>
+    
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(() => {
+            // click event
+            $('#click').click((e) => {
+                e.target.style.color = 'red'
+            })
+            //
+            // dbclick
+            $('#dblclick').dblclick((e) => {
+                e.target.style.color = 'green'
+            })
+            //
+            // mouseover
+            $('#mouseover').mouseover((e) => {
+                e.target.style.backgroundColor = 'pink'
+            })
+            //
+            // mouseleave
+            $('#mouseleave').mouseleave((e) => {
+                e.target.style.backgroundColor = 'white'
+                e.target.style.fontSize = '30px'
+            })
+            //
+            // mouseup
+            $('#mouseup').mouseup((e) => {
+              e.target.style.backgroundColor = 'pink'
+            })
+            //
+            //mousedown
+            $('#mousedown').mousedown((e) => {
+              e.target.style.backgroundColor = 'yellow'
+            })
+            //
+            //
+            // keyboard events
+            //keypress
+            $('#kp').keypress((e) => {
+              $('#keypress').text(e.target.value)
+            })
+            // keydown
+            $('#kd').keydown((e) => {
+              $('#keypdown').text(e.target.value)
+            })
+            //
+            //keyup
+            $('#ku').keyup((e) => {
+              $('#keyup').text(e.target.value)
+            })
+
+            
+            // form event   -radio and ckecebox mate work krse aeni velue show krva mate 
+
+            $('#fom[type=radio][name=gender]').change((e) => {
+            $('#from').text(e.target.value)
+          })
+            //
+            // focus
+            // $('input').focus((e) => {
+            //   e.target.style.backgroundColor = 'yellow'
+            // })
+            //
+            //blur
+            // $('input').blur((e) => {
+            //   e.target.style.backgroundColor = 'red'
+            // })
+            //
+            // scroll
+            // $('input').scroll((e) => {
+            // })
+            // onclick scroll
+            // $('button').click(() => {
+            //   window.scroll({
+            //     left: 100,
+            //     top: 100,
+            //     behavior: 'smooth',
+            //   })
+            // })
+            // resize
+            // $(window).resize(function () {
+            //   let width = $(window).width()
+            //   //   console.log(width)
+            //   if (width < 500) {
+            //     document.body.style.backgroundColor = 'red'
+            //   }
+            // })
+        })
+
+        //    $(function(){
+
+        //    })
+    </script>
+</body>
+
+</html>

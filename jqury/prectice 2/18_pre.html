@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- cdn jquery    -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <style>
+        .parth {
+            border: 1px solid;
+            margin: 20px;
+            padding: 10px;
+        }
+
+        ul,
+        li,
+        a,
+        span {
+            border: 1px solid red;
+            margin: 20px;
+            padding: 10px;
+        }
+
+        ul {
+            list-style: none;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div>
+        <p class="para">Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <h1>parth</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p class="p1"> Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <button id="prev">prev</button>
+    <button id="prevall">prevall</button>
+
+    <button id="prevUntil">prevUntil</button>
+    <!-- <button id="nextUntil">nextUntil</button> -->
+
+    <script>
+        $(document).ready(function () {
+            $("#prev").click(function () {
+                $("h1").prev()
+                    .css({ "background-color": "yellow" });
+            });
+
+            $("#prevall").click(function () {
+                $("h1").prevAll()
+                    .css({ "background-color": "red" });
+            });
+
+            $("#prevUntil").click(function () {
+                $("h1").prevUntil(".para")
+                    .css({ "background-color": "pink" });
+            });
+            $("#nextUntil").click(function () {
+                $("h1").nextUntil(".p1")
+                    .css({ "background-color": "red" });
+            });
+        });
+    </script>
+</body>
+
+</html>

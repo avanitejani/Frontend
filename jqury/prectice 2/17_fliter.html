@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- cdn jquery    -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <style>
+        .parth {
+            border: 1px solid;
+            margin: 20px;
+            padding: 10px;
+        }
+
+        ul,
+        li,
+        a,
+        span {
+            border: 1px solid red;
+            margin: 20px;
+            padding: 10px;
+        }
+
+        ul {
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p class="para">first line .... and .... with not use class for  not filterd line in p tage</p>
+        <h1>.........h1.........</h1>
+        <p>center line of all tage .... and .... with not use class for not filterd line in p tage</p>
+        <p>Lorem ipsum dolor sit amet. .... and .... with not use class for not filterd line in p tage</p>
+        <p class="p1">last line .... and .... with use class for filterd line in p tage</p>
+    </div>
+
+    <button id="first">first</button>
+    <button id="last">last</button>
+
+    <button id="eq">eq</button>
+    <button id="filter">filter</button>
+    <button id="Not">Not</button>
+
+
+    <script>
+        $(document).ready(function () {
+            $("#first").click(function () {
+                $("p").first()
+                    .css({ "background-color": "yellow" });
+            });
+
+            $("#last").click(function () {
+                $("p").last()
+                    .css({ "background-color": "red" });
+            });
+
+            $("#eq").click(function () {
+                $("p").eq("1")
+                    .css({ "background-color": "pink" });
+            });
+            $("#filter").click(function () {
+                $("p").filter(".p1")
+                    .css({ "background-color": "salmon" });
+            });
+            $("#Not").click(function () {
+                $("p").not(".p1")
+                    .css({ "background-color": "orange" });
+            });
+        });
+    </script>
+</body>
+
+</html>

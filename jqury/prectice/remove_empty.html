@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <style>
+        .text {
+            color: red;
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div style="background-color: yellow;height:100px;width:100px;" id="p1">
+        <a id="a">Vidhi is good girl Hemali is very honest</a>
+
+    </div>
+
+
+
+
+    <button id="remove">remove</button>
+
+    <button id="empty">empty</button>
+
+    <button id="Parth">Parth</button>
+
+    <h1>Lorem, ipsum.</h1>
+    <h1 class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates, dicta!</h1>
+    <script>
+        $(document).ready(function () {
+
+
+
+            $("#remove").click(function () {
+                $("#p1").remove();
+
+
+            });
+
+            $("#empty").click(function () {
+                $("#p1").empty();
+
+            });
+            $("#Parth").click(function () {
+                $("h1").remove(".text");
+
+
+
+            });
+
+
+
+
+        });
+    </script>
+</body>
+
+</html>

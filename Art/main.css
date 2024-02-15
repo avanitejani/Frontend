@@ -964,3 +964,200 @@
         color: rgb(233, 68, 96);
         transition: 1s all ease;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* my css style  ....................................................................................*/
+
+
+
+    .background {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 45px 40px;
+   padding: 10px 100px;
+   padding-top: 5%;
+   background-image: url(img/portfolio-bg.jpg);
+   overflow: hidden;
+ }
+
+ .box1 {
+   grid-row-start: 1;
+   grid-row-end: 3;
+   height: 80%;
+   width: 85%;
+   background-color: transparent;
+   border: 35px solid white;
+   outline: 15px outset black;
+   outline-offset: -1px;
+ }
+
+ .img1 img {
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+   position: relative;
+ }
+ 
+
+
+ .box2 {
+   grid-row-start: 1;
+   grid-row-end: 2;
+   height: 100%;
+   width: 83%;
+   background-color: transparent;
+   border: 35px solid white;
+   outline: 15px outset black;
+   outline-offset: -1px;
+ }
+
+ .img2 img {
+   height: 100%;
+   width: 100%;
+   overflow: hidden;
+   position: relative;
+ }
+
+
+ .box3 {
+   grid-row-start: 1;
+   grid-row-end: 1;
+   height: 79%;
+   width: 80%;
+   background-color: transparent;
+   border: 35px solid white;
+   outline: 15px outset black;
+   outline-offset: -1px;
+ }
+
+ .img3 img {
+   height: 100%;
+   width: 100%;
+   overflow: hidden;
+   position: relative;
+ }
+
+ .box4 {
+   grid-row-start: 1;
+   grid-row-end: 2;
+   height: 91%;
+   width: 80%;
+   background-color: transparent;
+   border: 35px solid white;
+   outline: 15px outset black;
+   outline-offset: -1px;
+ }
+
+ .img4 img {
+   height: 100%;
+   width: 100%;
+   overflow: hidden;
+   position: relative;
+ }
+
+ .box5 {
+   grid-row-start: 3;
+   grid-row-end: 4;
+   height: 100%;
+   width: 80%;
+   background-color: transparent;
+   border: 35px solid white;
+   outline: 15px outset black;
+   outline-offset: -1px;
+ }
+
+ .img5 img {
+   height: 100%;
+   width: 100%;
+   overflow: hidden;
+   position: relative;
+ }
+
+ .box6 {
+   margin-top: 20px;
+
+   grid-row-start: 5;
+   grid-row-end: 2;
+   height: 58%;
+   width: 80%;
+   background-color: transparent;
+   border: 35px solid white;
+   outline: 15px outset black;
+   outline-offset: -1px;
+ }
+
+ .img6 img {
+   height: 100%;
+   width: 100%;
+   overflow: hidden;
+   position: relative;
+ }
+
+ .box7 {
+   grid-row-start: 2;
+   grid-row-end: 4;
+   height: 67%;
+   width: 80%;
+   background-color: transparent;
+   border: 35px solid white;
+   outline: 15px outset black;
+   outline-offset: -1px;
+ }
+
+ .img7 img {
+   height: 100%;
+   width: 100%;
+   overflow: hidden;
+   position: relative;
+ }
+
+ .box8 {
+   grid-row-start: 3;
+   grid-row-end: 2;
+   height: 99%;
+   width: 80%;
+   background-color: transparent;
+   border: 35px solid white;
+   outline: 15px outset black;
+   outline-offset: -1px;
+ }
+
+ .img8 img {
+   height: 100%;
+   width: 100%;
+   overflow: hidden;
+   position: relative;
+ }
+
+ .box9 {
+   grid-row-start: 5;
+   grid-row-end: 3;
+   height: 74%;
+   width: 80%;
+   background-color: transparent;
+   border: 35px solid white;
+   outline: 15px outset black;
+   outline-offset: -1px;
+ }
+
+ .img9 img {
+   height: 100%;
+   width: 100%;
+   overflow: hidden;
+   position: relative;
+ }
+

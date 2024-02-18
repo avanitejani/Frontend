@@ -30,3 +30,89 @@ console.log(JSON.stringify(obj(arr)));
     </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function addItem() {
+let addData = document.getElementById('new-task').value;
+
+if (addData.trim() !== '') {
+
+let div = document.createElement('div');
+let hfive = document.createElement('h5');
+let deleteBtn = document.createElement('button');
+
+hfive.innerHTML = addData;
+
+deleteBtn.innerHTML = ' delete ';
+deleteBtn.onclick = function () {
+div.remove();
+};
+
+
+div.appendChild(hfive);
+div.appendChild(deleteBtn);
+document.getElementById("in2").appendChild(div);
+
+document.getElementById("new-task").value = '';
+
+
+}
+
+}

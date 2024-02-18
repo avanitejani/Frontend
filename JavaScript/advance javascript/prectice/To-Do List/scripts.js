@@ -1,6 +1,6 @@
 
     function addItem() {
-        let addData = document.getElementById('new-task').value
+    let addData = document.getElementById('new-task').value
     let hfive = document.createElement('h5')
     let uppr = addData.toUpperCase()
     hfive.innerHTML = uppr

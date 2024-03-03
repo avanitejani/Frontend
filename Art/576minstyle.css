@@ -129,6 +129,22 @@
 
   }
 
+     .section4 {
+       width: 100%;
+       background-color: black;
+     }
+  
+     .section4 h1 {
+       font-size: 50px;
+       text-transform: uppercase;
+     }
+  
+     .section4 .imgline img {
+       width: 50%;
+  
+     }
+
+
 
   /* section5  */
 
@@ -277,48 +293,114 @@
   }
 
 
+/* section9  */
 
+  .section9 {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-        .section9 {
-          width: 100%;
-          margin: auto;
-          display: flex;
-          flex-direction: column;
-        }
-    
-        .section9 .left {
-          width: 100%;
-        }
-    
-        .section9 .left img {
-          height: 320px;
-        }
-    
-        .section9 .right {
-          width: 100%;
-        }
-    
-        .section9 .right h1 {
-          font-weight: 400;
-          padding: 5px 0px;
-          font-size: 30px;
-        }
-    
-        .section9 .right p {
-          font-weight: 300;
-          padding: 1px 0px;
-          font-size: 14px;
-        }
-    
-        .section9 .form-control {
-          border-radius: 0%;
-          width: 200px;
-          border: none;
-          height: 40px;
-        }
-    
-        .section9 .submit {
-          width: 100px;
-        }
+  .section9 .left {
+    width: 100%;
+  }
+
+  .section9 .left img {
+    height: 99%;
+  }
+
+  .section9 .right {
+    width: 100%;
+      margin: auto;
+  }
+
+  .section9 .right h1 {
+    font-weight: 400;
+    padding: 5px 0px;
+    font-size: 30px;
+  }
+
+  .section9 .right p {
+    font-weight: 300;
+    padding: 1px 0px;
+    font-size: 14px;
+  }
+
+  .section9 .form-control {
+    border-radius: 0%;
+    width: 200px;
+    border: none;
+    height: 40px;
+  }
+
+  .section9 .submit {
+    width: 100px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px 40px;
+    padding: 5% 100px;
+    background-image: url(https://wedesignthemes.com/html/redart/default/images/portfolio-bg.jpg);
+
+  }
+
+  .box1 {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    outline-offset: -1px;
+
+  }
+
+  .box2 {
+
+    grid-row-start: 2;
+    grid-row-end: 2;
+    outline-offset: -1px;
+  }
+
+  .box3 {
+    grid-row-start: 3;
+    grid-row-end: 3;
+    outline-offset: -1px;
+  }
+
+  .box4 {
+    grid-row-start: 4;
+    grid-row-end: 4;
+    outline-offset: -1px;
+  }
+
+  .box5 {
+    grid-row-start: 5;
+    grid-row-end: 5;
+    outline-offset: -1px;
+  }
+
+  .box6 {
+    grid-row-start: 6;
+    grid-row-end:6;
+    outline-offset: -1px;
+  }
+
+  .box7 {
+    grid-row-start: 7;
+    grid-row-end: 7;
+    outline-offset: -1px;
+  }
+
+  .box8 {
+    grid-row-start: 8;
+    grid-row-end: 8;
+    outline-offset: -1px;
+  }
+
+  .box9 {
+    grid-row-start: 9;
+    grid-row-end: 9;
+    outline-offset: -1px;
+  }
 
 }

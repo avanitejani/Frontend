@@ -23,22 +23,57 @@
         console.log(`b :${b}`)
    </script>  -->
 
+<div id="todo">
+    <h2>TO-DO List</h2>
+
+    <ul id="task">
+        <li class="task" id="in2">
+        </li>
+    </ul>
+    <div class="add-task-container">
+        <input type="text" id="new-task" placeholder="New Task">
+        <button id="add-btn" onclick="addItem()">Add</button>
+    </div>
+</div>
+
    <script>
-    let n=5
-    for (let i=0;i<=n;i++){
-        for (let j=0;j<i;j++){
-            // console.log("*");
-            document.write("*")
-        }
-        // console.log('</br>');
-            document.write('</br>')
+    // let n=5
+    // for (let i=0;i<=n;i++){
+    //     for (let j=0;j<i;j++){
+    //         // console.log("*");
+    //         document.write("*")
+    //     }
+    //     // console.log('</br>');
+    //         document.write('</br>')
 
-    }
-    ()=>{
+    // }
+    // ()=>{
         
+    // }
+
+    function addItem() {
+        let addData = document.getElementById('new-task').value;
+
+        if (addData.trim() !== '') {
+            let div = document.createElement('div');
+            let hfive = document.createElement('h5');
+            let deleteBtn = document.createElement('button');
+
+            hfive.innerHTML = addData;
+            deleteBtn.innerHTML = 'delete';
+            deleteBtn.onclick = function () {
+                div.remove();
+            };
+
+
+
+            div.appendChild(hfive);
+            div.appendChild(deleteBtn);
+            document.getElementById("in2").appendChild(div);
+
+            document.getElementById("new-task").value = '';
+        }
     }
-
-
 
    </script>
 </body>

@@ -6,6 +6,10 @@
 
 
  }
+ img{
+  z-index: -1;
+ }
+ 
 
  /* body {
    overflow: hidden;
@@ -74,10 +78,11 @@
  .mithi a:hover {
    color: rgb(0, 0, 0);
    background-color: white;
+   z-index: 1;
 
 
  }
-
+ 
  #m1 {
    background-color: white;
    color: black;
@@ -86,8 +91,9 @@
 
 
  #icon {
+  display: none;
    font-size: 24px;
-   margin-right: -40px;
+   margin: auto;
    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
    /* display: none; */
  }
@@ -95,10 +101,15 @@
  /* #icon:hover { 
     display: block;
   } */
-
+     .mithi a:hover #icon {
+       display: block;position: relative;
+  
+  
+     }
 
 
  #icon1 {
+  /* display: none; */
    font-size: 24px;
    margin-right: -40px;
    /* Add spacing between the icon and the text */
@@ -1915,6 +1926,7 @@ z-index: 5 !important;
    width: 100%;
    margin: auto;
    display: flex;
+   justify-content: center !important;
  }
 
  .section9 .left {
@@ -1923,13 +1935,16 @@ z-index: 5 !important;
  }
 
  .section9 .left img {
+      margin: auto;
    background-color: black;
-   height: 500px;
+   height: 99%;
    margin-left: 5%;
    /* border: 2px solid rgb(109, 128, 0); */
  }
 
  .section9 .right {
+      margin: auto;
+      
    background-color: black;
    width: 50%;
    color: white;
@@ -1968,12 +1983,13 @@ z-index: 5 !important;
    background-color: black;
    padding: 5% 0px;
    width: 100%;
+   overflow: hidden;
  }
 
  .section10 img {
    background-attachment: unset;
    background-repeat: repeat;
-   width: 475px;
+   width: 300px;
  }
 
 
@@ -2011,8 +2027,15 @@ z-index: 5 !important;
    color: white;
    text-decoration: none;
  }
+ .footer a:hover {
+   color: rgba(202, 0, 0, 0.814);
+ }
 
  .footer .payment a {
    color: #ffffff50;
+   font-size: 30px;
+ }
+ .footer .payment a:hover {
+   color: #ffffff;
    font-size: 30px;
  }

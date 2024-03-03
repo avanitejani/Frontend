@@ -35,6 +35,13 @@
 
 
 
+  <!-- auto <576 
+        sm   >576 
+        md   >768 
+        lg   >992
+        xl  >1200px
+        xxl >1400px -->
+
 
 
 
@@ -42,6 +49,9 @@
   <!-- css link  -->
 
   <link rel="stylesheet" href="style.css">
+
+
+
   <link rel="stylesheet" href="576max.css">
   <link rel="stylesheet" href="576minstyle.css">
   <link rel="stylesheet" href="768style.css">
@@ -49,6 +59,8 @@
   <link rel="stylesheet" href="1200style.css">
   <link rel="stylesheet" href="1400style.css">
   <link rel="stylesheet" href="1870style.css">
+
+
 
 
 
@@ -184,6 +196,14 @@
 
 <body>
 
+
+  <!-- auto <576 
+      sm   >576 
+      md   >768 
+      lg   >992
+      xl  >1200px
+      xxl >1400px -->
+
   <!-- <img src="img/logo.png" alt=""> -->
 
   <!-- <div class="art  position-relative ">
@@ -201,7 +221,7 @@
             <ul>
 
               <li class="drop1">
-                <a id="m1" href="" style="color: black;"><span id="icon1" class="fa-solid fa-house-chimney"
+                <a id="m1" href="/art.html" style="color: black;"><span id="icon1" class="fa-solid fa-house-chimney"
                     style="color: #c4c2c2;"></span> <span id="sr" style="color: maroon;">[</span> HOME </span><span
                     id="sl" style="color: maroon;">]</span></a>
                 <ul class="Gallery">
@@ -211,8 +231,8 @@
                         id="sl">]</span></a></li>
                   <li><a href="gallery-detail-with-rhs.html"><span id="sr">[</span> Gallery-detail-right-sidebar <span
                         id="sl">]</span></a></li>
-                  <li><a href="gallery-detail-with-rhs.html"><span id="sr">[</span> Gallery-detail-right-sidebar <span
-                        id="sl">]</span></a></li>
+                  <!-- <li><a href="gallery-detail-with-rhs.html"><span id="sr">[</span> Gallery-detail-right-sidebar <span
+                        id="sl">]</span></a></li> -->
 
                 </ul>
               </li>
@@ -220,8 +240,8 @@
 
 
               <li>
-                <a href=""><span id="icon" class="fa-solid fa-user-secret" style="color: #d4d4d4;"></span> <span
-                    id="sr">[</span> ABOUT US </span><span id="sl">]</span></a>
+                <a href="About/about.html"><span id="icon" class="fa-solid fa-user-secret"
+                    style="color: #d4d4d4;"></span> <span id="sr">[</span> ABOUT US </span><span id="sl">]</span></a>
               </li>
 
 
@@ -289,10 +309,10 @@
                         id="sl">]</span></a></li>
                   <li><a href="gallery-detail-with-rhs.html"><span id="sr">[</span> Gallery-detail-right-sidebar <span
                         id="sl">]</span></a></li>
-                  <li><a href="gallery-detail-with-lhs.html"><span id="sr">[</span> Gallery-detail-left-sidebar <span
+                  <!-- <li><a href="gallery-detail-with-lhs.html"><span id="sr">[</span> Gallery-detail-left-sidebar <span
                         id="sl">]</span></a></li>
                   <li><a href="gallery-detail-with-rhs.html"><span id="sr">[</span> Gallery-detail-right-sidebar <span
-                        id="sl">]</span></a></li>
+                        id="sl">]</span></a></li> -->
 
                 </ul>
               </li>
@@ -427,7 +447,7 @@
 
 
 
-  <div class="grid">
+  <div class="grid container-fluid col-xxl-12 ">
     <div class="box1">
       <div class="main1">
         <img src="https://wedesignthemes.com/html/redart/default/images/portfolio-images/img-1.jpg" alt=""
@@ -868,10 +888,10 @@
 
 
   <!-- section 9 -->
-  <div class="section9 ">
-    <div class="container d-md-flex col-sm-12">
+  <div class="section9 m-0 p-0">
+    <div class="container  d-md-flex col-sm-11 m-0 p-0">
       <div class="col-6 left col-sm-12 ms-md-0 ms-sm-5">
-        <img src="img/about.png" alt="">
+        <img class="m-0 " src="img/about.png" height="50%" width="100%" alt="">
       </div>
       <div class="col-6 right  col-sm-12 ">
         <div class="containt">
@@ -889,9 +909,9 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
           <div class="btn-group mt-2 ">
 
-            <input type="email" class="form-control text-light" placeholder="Mail " aria-label="Input group example"
-              aria-describedby="btnGroupAddon">
-            <button class="border-0 btn-lg bg-danger submit col-lg-12 col-md-6">Subscribe</button>
+            <input type="email" style="width: 100%;" class="form-control text-light" placeholder="Mail "
+              aria-label="Input group example" aria-describedby="btnGroupAddon">
+            <button style="width: 50%;" class="border-0 btn-lg bg-danger submit col-lg-12 col-md-6">Subscribe</button>
           </div>
         </div>
       </div>
@@ -900,31 +920,35 @@
 
   <!-- section 10 -->
 
-  <!-- <div class="section10 d-flex">
-  <img src="img/title-line.png" alt="">
-  <img src="img/title-line.png" alt="">
-  <img src="img/title-line.png" alt="">
-  <img src="img/title-line.png" alt="">
-  </div> -->
+  <div class="section10 d-flex">
+    <img src="img/title-line.png" alt="">
+    <img src="img/title-line.png" alt="">
+    <img src="img/title-line.png" alt="">
+    <img src="img/title-line.png" alt="">
+    <img src="img/title-line.png" alt="">
+
+    <img src="img/title-line.png" alt="">
+
+  </div>
 
   <div class="footer p-5">
-  <div class="top">
-    <ul class="d-flex" >
-      <li><a href="#">Contact us</a></li>
-      <li><a href="#">Privacy policy</a></li>
-      <li><a href="#">Terms of use</a></li>
-      <li><a href="#">Faq</a></li>
-    </ul>
-    <ul class="payment d-flex">
-      <li><a href="#" class="fa-brands fa-cc-amex"></a></li>
-      <li><a href="#" class="fa-brands fa-cc-mastercard"></a></li>
-      <li><a href="#" class="fa-brands fa-cc-visa"></a></li>
-      <li><a href="#" class="fa-brands fa-cc-discover"></a></li>
-      <li><a href="#" class="fa-brands fa-cc-paypal"></a></li> 
-    </ul>
-    <p>© 2015 <a href="#">RED ART</a>. All rights reserved.</p>
+    <div class="top">
+      <ul class="d-flex">
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Privacy policy</a></li>
+        <li><a href="#">Terms of use</a></li>
+        <li><a href="#">Faq</a></li>
+      </ul>
+      <ul class="payment d-flex">
+        <li><a href="#" class="fa-brands fa-cc-amex"></a></li>
+        <li><a href="#" class="fa-brands fa-cc-mastercard"></a></li>
+        <li><a href="#" class="fa-brands fa-cc-visa"></a></li>
+        <li><a href="#" class="fa-brands fa-cc-discover"></a></li>
+        <li><a href="#" class="fa-brands fa-cc-paypal"></a></li>
+      </ul>
+      <p>© 2015 <a href="#">RED ART</a>. All rights reserved.</p>
+    </div>
   </div>
-</div>
 
 
 

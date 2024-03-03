@@ -283,7 +283,7 @@
     display: grid;
     grid-template-columns: auto auto;
     column-gap: 100px;
-    width: 1200px;
+    width: 100%;
     justify-content: center;
     margin: 3% 18%;
 

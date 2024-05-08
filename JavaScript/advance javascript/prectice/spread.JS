@@ -3,6 +3,7 @@
 var a = [1, 2, 3, 4, 5]
 
 var b = [...a, 10, 11, 12]
+console.log(b);
 
 var obj = { name: 'bhadres', age: 25 }
 var o = { ...obj }

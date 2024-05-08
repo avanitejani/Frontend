@@ -1,0 +1,552 @@
+Q.1 What is JavaScript. How to use it?
+Ans:
+-->JavaScript is a scripting language use to manupulate html.
+-->JavaScript is use to change html.
+-->JavaScript writen in html using script tag.
+
+Q.2 How many type of Variable in JavaScript?
+Ans:
+-->Two types of Variable
+1.primitiv
+a.number
+b.string
+c.boolen
+d.null
+e.undefined
+2.non primitiv
+a.Array
+b.Object
+
+Q.3 Define a Data Types in js?
+Ans:
+1.primitiv
+a.number:
+-->Represents numeric values. It can be an integer or a floating-point number.
+
+b.string:
+-->Represents a sequence of characters enclosed within single quotes (''), double quotes ("") or backticks (``).
+
+c.boolean:
+-->Represents a logical value indicating true or false.
+
+d.null:
+-->Represents an intentional absence of any value.
+
+e.undefined:
+-->Variable is undefined.
+
+2.Non primitiv
+
+a.Array:
+--> Represents a collection of elements, ordered and indexed starting from zero.
+
+b.Object:
+-->Represents a collection of key-value pairs where keys are strings (or Symbols) and values can be any data type,
+including other objects.
+
+Q.4 Write a mul Function Which will Work Properly When invoked With Following Syntax.
+Ans:
+To write a 'mul' function that works properly when invoked with various syntaxes, you can define it to accept multiple
+arguments and handle each case accordingly.
+function mul() {
+if (arguments.length === 0) {
+return 0;
+}
+
+// Check if only one argument is provided
+if (arguments.length === 1) {
+// If it's an array, multiply its elements
+if (Array.isArray(arguments[0])) {
+return arguments[0].reduce((acc, curr) => acc * curr, 1);
+} else {
+return arguments[0];
+}
+}
+
+// If multiple arguments are provided, multiply them all
+return Array.from(arguments).reduce((acc, curr) => acc * curr, 1);
+}
+console.log(mul()); // Output: 0
+console.log(mul(2)); // Output: 2
+console.log(mul(2, 3)); // Output: 6
+console.log(mul(2, 3, 4)); // Output: 24
+console.log(mul([2, 3, 4])); // Output: 24
+
+If no arguments are provided, it returns 0.
+If only one argument is provided, it checks if it's an array. If so, it multiplies its elements. Otherwise, it returns
+the single value.
+If multiple arguments are provided, it multiplies them all together.
+
+Q.5 What the deference between undefined and undeclare in JavaScript?
+Ans:
+-->'undefined' is a primitive data type in JavaScript that represents the absence of a value. It indicates that a
+variable has been declared but has not been assigned a value.
+-->An 'undeclared' variable is one that has not been declared (i.e., it doesn't exist) within the scope in which it's
+being referenced.
+-->undefined is a value assigned to a variable indicating that it has been declared but not assigned a value or has been
+explicitly set to undefined.
+-->Undeclared variables, on the other hand, refer to variables that have not been declared using var, let, or const, and
+attempting to use them will result in a ReferenceError.
+-->Undefined variable
+let x;
+console.log(x); // Output: undefined
+
+-->Undeclared variable
+console.log(y); // ReferenceError: y is not defined
+
+Q.6 Using console.log() print out the following statement: The quote 'There is no exercise
+better for the heart than reaching down and lifting people up.' by John Holmes teaches us to
+help one another. Using console.log() print out the following quote by Mother Teresa:
+Ans:
+You can print out the given statements using 'console.log()' as follows:
+->console.log("The quote 'There is no exercise better for the heart than reaching down and lifting people up.' by John
+Holmes teaches us to help one another.");
+->console.log('The quote "Spread love everywhere you go. Let no one ever come to you without leaving happier." by Mother
+Teresa.');
+
+Q.7 Check if typeof '10' is exactly equal to 10. If not make it exactly equal?
+Ans:
+-->In JavaScript, the typeof operator returns a string indicating the type of the operand. When comparing the type of
+'10' and 10, they will not be exactly equal because '10' is a string type and 10 is a number type.
+-->To make them exactly equal, we can convert the string '10' to a number. This can be achieved using the parseInt()
+function, which parses a string argument and returns an integer.
+if (typeof '10' !== typeof 10) {
+let num = parseInt('10');
+console.log(num);
+} else {
+console.log("'10' is exactly equal to 10.");
+}
+-->The typeof '10' '!==' typeof 10 condition checks if the type of '10' is not exactly equal to the type of '10'.
+-->Inside the if block, the string '10' is converted to a number using 'parseInt()' function and assigned to the
+variable num.
+
+Q.8 Write a JavaScript Program to find the area of a triangle?
+Ans:
+JavaScript program to find the area of a triangle using the formula: Area = (base * height) / 2.
+// Function to calculate the area of a triangle
+function calculateTriangleArea(base, height) {
+var area = (base * height) / 2;
+return area;
+}
+-->Example usage
+var base = 5; // Base of the triangle
+var height = 8; // Height of the triangle
+var triangleArea = calculateTriangleArea(base, height);
+
+-->Output the result
+console.log("The area of the triangle is: " + triangleArea);
+We define a function 'calculateTriangleArea' that takes two parameters: 'base' and 'height'.
+Inside the function, we use the formula for the area of a triangle, which is (base * height) / 2, to calculate the area.
+The calculated area is returned from the function.
+
+Q.9 Write a JavaScript program to calculate days left until next Christmas?
+Ans:
+Here's a JavaScript program to calculate the number of days left until the next Christmas:
+
+function daysUntilChristmas() {
+// Get today's date
+var today = new Date();
+
+var christmasYear = today.getFullYear();
+var christmasDate = new Date(christmasYear, 11, 25); // Month is 0-indexed, so 11 represents December
+
+if (today.getMonth() === 11 && today.getDate() > 25) {
+christmasDate.setFullYear(christmasYear + 1); // If Christmas has passed, set it to next year
+}
+
+// Calculate the difference in milliseconds between today and Christmas
+var difference = christmasDate.getTime() - today.getTime();
+
+// Convert the difference from milliseconds to days
+var daysLeft = Math.ceil(difference / (1000 * 60 * 60 * 24));
+
+return daysLeft;
+}
+var daysLeftUntilChristmas = daysUntilChristmas();
+
+// Output the result
+console.log("There are " + daysLeftUntilChristmas + " days left until next Christmas.");
+
+-->We define a function daysUntilChristmas which calculates the number of days left until the next Christmas.
+-->Inside the function, we get today's date using new 'Date()'.
+-->We calculate the date of the next Christmas by creating a new date object with the year set to the current year and
+the month and day set to December 25th.
+-->If Christmas has already passed this year, we increment the year for the next Christmas.
+-->We calculate the difference in milliseconds between today and Christmas.
+-->Finally, we return the number of days left until Christmas.
+-->We call the function 'daysUntilChristmas()' and store the result in the variable daysLeftUntilChristmas.
+
+Q.10 What is Condition Statement?
+Ans:
+A condition statement, also known as a conditional statement or a control structure, is a programming construct that
+allows the execution of different sets of instructions based on the evaluation of a condition. It enables a program to
+make decisions and choose different paths of execution depending on whether certain conditions are true or false.
+The most common type of condition statement is the 'if' statement. In its simplest form, an 'if' statement evaluates a
+condition and executes a block of code if the condition is true. Optionally, it can be followed by else if and else
+clauses to specify additional conditions and code blocks to execute when the preceding conditions are false.
+
+var temperature = 25;
+
+if (temperature > 30) {
+console.log("It's hot outside!");
+} else if (temperature > 20) {
+console.log("It's warm outside.");
+} else {
+console.log("It's cold outside.");
+}
+
+-->We have a variable 'temperature' set to 25.
+-->The 'if' statement checks if the 'temperature' is greater than 30. If it is, it prints "It's hot outside!".
+-->If the condition in the 'if' statement is false, it checks the condition in the 'else if' statement (temperature >
+20). If this condition is true, it prints "It's warm outside.".
+
+Q.11 Find circumference of Rectangle formula : C = 4 * a ?
+Ans:
+The formula you provided, C=4×a, is actually the formula for calculating the perimeter, not the circumference, of a
+rectangle. In the context of rectangles, "perimeter" is the term used to refer to the total length of the boundary of
+the rectangle.
+In the formula:
+-->C represents the perimeter (or circumference, in some contexts).
+-->a represents the length of one side of the rectangle.
+To find the perimeter of a rectangle, you multiply the length of one side by 4, since a rectangle has four sides of
+equal length (opposite sides are equal).
+
+Q.12 WAP to convert years into days and days into years?
+Ans:
+Here's a JavaScript program that converts years into days and vice versa:
+// Function to convert years into days
+function yearsToDays(years) {
+var days = years * 365; // Approximation assuming a year has 365 days
+return days;
+}
+
+// Function to convert days into years
+function daysToYears(days) {
+var years = days / 365; // Approximation assuming a year has 365 days
+return years;
+}
+
+// Example usage for years to days conversion
+var years = 3;
+var days = yearsToDays(years);
+console.log(years + " years is equal to " + days + " days.");
+
+// Example usage for days to years conversion
+var days = 1095; // 3 years worth of days
+var years = daysToYears(days);
+console.log(days + " days is equal to " + years + " years.");
+
+-->We define two functions: yearsToDays and daysToYears.
+-->'yearsToDays' function takes the number of years as input and multiplies it by 365.
+-->'daysToYears' function takes the number of days as input and divides it by 365 to calculate the equivalent number of
+years.
+-->We provide example usage for both conversions:
+We convert 3 years into days and output the result.
+We convert 1095 days (which is approximately 3 years) into years and output the result.
+
+Q.13 Convert temperature Fahrenheit to Celsius? (Conditional logic Question)
+Ans:
+To convert temperature from Fahrenheit to Celsius, you can use the following formula:
+C=5/9*(F-32)
+Where:
+-->C is the temperature in Celsius.
+-->F is the temperature in Fahrenheit.
+JavaScript program to convert temperature from Fahrenheit to Celsius using conditional logic:
+// Function to convert Fahrenheit to Celsius
+function fahrenheitToCelsius(fahrenheit) {
+var celsius;
+if (fahrenheit === undefined || isNaN(fahrenheit)) {
+console.log("Please provide a valid temperature in Fahrenheit.");
+return;
+}
+celsius = (5/9) * (fahrenheit - 32);
+return celsius;
+}
+
+// Example usage
+var fahrenheitTemperature = 68; // Temperature in Fahrenheit
+var celsiusTemperature = fahrenheitToCelsius(fahrenheitTemperature);
+console.log(fahrenheitTemperature + "°F is equal to " + celsiusTemperature.toFixed(2) + "°C.");
+-->We define a function fahrenheitToCelsius that takes the temperature in Fahrenheit as input.
+
+Q.14 Write a JavaScript exercise to get the extension of a filename.?
+Ans:
+// Function to get the extension of a filename
+function getFileExtension(filename) {
+// Split the filename into an array based on the dot (.)
+var parts = filename.split(".");
+// Get the last part of the array which represents the extension
+var extension = parts[parts.length - 1];
+return extension;
+}
+Example usage:
+var filename = "example.txt";
+var extension = getFileExtension(filename);
+console.log("The extension of the file '" + filename + "' is '" + extension + "'.");
+-->We define a function 'getFileExtension' that takes a filename as input.
+-->Inside the function, we use the split() method to split the filename into an array based on the dot (.) character.
+This creates an array of parts where each part is separated by a dot.
+
+Q.15 What is the result of the expression (5 > 3 && 2 < 4)? Ans: -->5 > 3 evaluates to true.
+    -->2 < 4 evaluates to true. So, both conditions are 'true' , and the result of the entire expression is 'true' .
+        Q.16 What is the result of the expression (true && 1 && "hello" )? Ans: -->true is truth.
+        -->1 is also truth.
+        -->"hello" is a non-empty string, which is also truth.
+        all expressions evaluate to true, the '&&' operator returns the value of the last expression, which is "hello".
+
+        Q.17 What is the result of the expression true && false || false && true?
+        Ans:
+        The result of the expression 'true && false || false && true' can be evaluated by considering the precedence of
+        logical operators:
+        -->'&&' (logical AND) has higher precedence than '||' (logical OR).
+        -->Operators with the same precedence are evaluated from left to right.
+
+        So, breaking down the expression:
+        -->'true && false' evaluates to false because one of the operands is false.
+        -->'false && true' also evaluates to false for the same reason.
+
+        Then, evaluating the entire expression:
+        -->'false || false' evaluates to false because both operands are 'false'.
+        -->Thus, the result of the expression is 'false'.
+
+        Q.18 What is a Loop and Switch Case in JavaScript define that ?
+        Ans:
+        Loops: Loops are control structures that allow you to execute a block of code repeatedly as long as a specified
+        condition is true. They help automate repetitive tasks and iterate over collections of data. In JavaScript,
+        there are different types of loops:
+        ->for loop: Executes a block of code a specified number of times.
+        ->while loop: Executes a block of code as long as a specified condition is true.
+        ->do...while loop: Similar to the while loop but always executes the block of code at least once before checking
+        the condition.
+        ->for...in loop: Iterates over the properties of an object.
+        ->for...of loop: Iterates over iterable objects like arrays, strings, etc.
+
+        Switch Case: The switch statement is used to perform different actions based on different conditions. It
+        evaluates an expression, matches the expression's value to a case clause, and executes statements associated
+        with that case. If no match is found, it can optionally execute a default clause. Switch statements are
+        particularly useful when you have multiple conditions to check against the same value.
+
+        Q.19 What is the use of is Nan function?
+        Ans:
+        The 'isNaN()' function in JavaScript is used to determine whether a value is NaN (Not-a-Number) or not. NaN is a
+        special value that represents an invalid number, which typically occurs as a result of a mathematical operation
+        that cannot produce a meaningful result.
+        The 'isNaN()' function takes one argument, which can be any value. It returns true if the value is NaN, and
+        false otherwise. Here's how you can use it:
+        Example:
+        isNaN(NaN); // true
+        isNaN(123); // false
+        isNaN("hello"); // true
+        isNaN(undefined);// true
+
+        Q.20 What is the difference between && and || in JavaScript?
+        Ans:
+        In JavaScript, '&& and ||' are logical operators used to perform logical AND and logical OR operations,
+        respectively.
+        -->Logical AND (&&):
+        The '&&' operator returns true if both operands are true. Otherwise, it returns false.
+        It short-circuits evaluation: if the first operand evaluates to false, the second operand is not evaluated
+        because the result will always be false.
+        Example:
+        true && true // true
+        true && false // false
+        false && true // false
+        false && false // false
+
+        -->Logical OR (||):
+        The '||' operator returns true if at least one of the operands is 'true'. If both operands are false, it returns
+        false.
+        Like '&&', '||' also short-circuits evaluation: if the first operand evaluates to true, the second operand is
+        not evaluated because the result will always be 'true'.
+        Example:
+        true || true // true
+        true || false // true
+        false || true // true
+        false || false // false
+
+        Q.21 What is the use of Void (0)?
+        Ans:
+        The 'void' operator in JavaScript is used to evaluate an expression without returning a value. When 'void' is
+        followed by an expression, it evaluates that expression and returns undefined. It's typically used in situations
+        where you want to perform an action without affecting the current page's state or to create a placeholder for a
+        URL.
+        The common use case of 'void(0)' is within HTML anchor '(<a>)' tags to create "javascript:void(0);" links. These
+            links are often used to prevent the browser from navigating to a new page when clicked while still executing
+            JavaScript code.
+
+            <a href="javascript:void(0);" onclick="doSomething();">Click me</a>
+
+            when the link is 'clicked', the 'doSomething()' function is executed, but the browser won't navigate away
+            from the current page because the href attribute is set to javascript:void(0);.
+
+            Q.22 Check Number Is Positive or Negative in JavaScript?
+            Ans:
+            In JavaScript, you can check whether a number is positive or negative using a simple conditional statement.
+            let number = 10;
+
+            if (number > 0) {
+            console.log("The number is positive.");
+            }
+            // Check if the number is negative
+            else if (number < 0) { console.log("The number is negative."); } // If the number is neither positive nor
+                negative, it must be zero else { console.log("The number is zero."); } --> define a variable number with
+                the value you want to check.
+                -->We use an if statement to check if number is greater than 0. If it is, then it's positive.
+
+                Q-23 Find the Character Is Vowel or Not ?
+                Ans:
+                In JavaScript, you can check whether a character is a vowel or not using a simple conditional statement.
+                Here's a brief explanation of how you can do it:
+                et character = 'a';
+
+                // Convert the character to lowercase to handle both lowercase and uppercase vowels
+                character = character.toLowerCase();
+
+                // Check if the character is a vowel
+                if (character === 'a' || character === 'e' || character === 'i' || character === 'o' || character ===
+                'u') {
+                console.log("The character is a vowel.");
+                } else {
+                console.log("The character is not a vowel.");
+                }
+
+                -->We define a variable character with the character you want to check.
+                -->We convert the character to lowercase using toLowerCase() method to handle both lowercase and
+                uppercase vowels.
+
+                Q.24 Write to check whether a number is negative, positive or zero?
+                Ans:
+                function checkNumber(num) {
+                if (num > 0) {
+                return "Positive";
+                } else if (num < 0) { return "Negative" ; } else { return "Zero" ; } } // Example usage: let
+                    number=parseFloat(prompt("Enter a number: "));
+    console.log(checkNumber(number));
+    
+    -->checkNumber is a function that takes a number num as input.
+    -->It uses an if-else if-else statement to check the value of the input number:
+    -->If the number is greater than 0 (num > 0), it returns the string " Positive". -->If the number is less than 0
+                    (num < 0), it returns the string '"Negative"' . Q.25 Write to find number is even or odd using
+                        ternary operator in JS? Ans: function checkEvenOdd(num) { return (num % 2===0) ? "Even" : "Odd"
+                        ; } // Example usage: let number=parseInt(prompt("Enter a number: "));
+    console.log(checkEvenOdd(number));
+    The checkEvenOdd function takes a number num as input.
+    It uses the ternary operator condition ? 'expr1' : 'expr2' to check if the number is even or odd:
+    If the condition num '% 2 === 0' evaluates to true, it returns " Even". If the condition evaluates to false, it
+                        returns '"Odd"' . Q.26 Write find maximum number among 3 numbers using ternary operator in JS?
+                        Ans: function findMax(num1, num2, num3) { return (num1>= num2 && num1 >= num3) ? num1 :
+                        (num2 >= num1 && num2 >= num3) ? num2 :
+                        num3;
+                        }
+
+                        // Example usage:
+                        let number1 = parseFloat(prompt("Enter the first number: "));
+                        let number2 = parseFloat(prompt("Enter the second number: "));
+                        let number3 = parseFloat(prompt("Enter the third number: "));
+                        console.log("The maximum number is: " + findMax(number1, number2, number3));
+
+                        -->The findMax function takes three numbers 'num1', 'num2', and 'num3' as input.
+                        -->It uses multiple ternary operators to compare the three numbers and determine the maximum:
+                        The first ternary operator checks if num1 is greater than or equal to both num2 and num3. If
+                        true, it returns num1. If false, it proceeds to the next ternary operator.
+                        The second ternary operator checks if num2 is greater than or equal to both num1 and num3. If
+                        true, it returns num2. If false, it returns num3, as it is the only remaining option.
+
+                        Q.27 Write to find minimum number among 3 numbers using ternary operator in JS?
+                        Ans:
+                        function findMin(num1, num2, num3) {
+                        return (num1 <= num2 && num1 <=num3) ? num1 : (num2 <=num1 && num2 <=num3) ? num2 : num3; } //
+                            Example usage: let number1=parseFloat(prompt("Enter the first number: "));
+    let number2 = parseFloat(prompt(" Enter the second number: "));
+    let number3 = parseFloat(prompt(" Enter the third number: "));
+    console.log(" The minimum number is: " + findMin(number1, number2, number3));
+    
+    The findMin function takes three numbers num1, num2, and num3 as input.
+    It uses multiple ternary operators to compare the three numbers and determine the minimum:
+    The first ternary operator checks if num1 is less than or equal to both num2 and num3. If true, it returns num1. If false, it proceeds to the next ternary operator.
+    The second ternary operator checks if num2 is less than or equal to both num1 and num3. If true, it returns num2. If false, it returns num3, as it is the only remaining option.
+    
+    Q.28 Write to find the largest of three numbers in JS?
+    Ans:
+    function findLargest(num1, num2, num3) {
+        let largest = num1; // Assume num1 is the largest initially
+    
+        if (num2 > largest) {
+            largest = num2; // Update largest if num2 is greater
+        }
+    
+        if (num3 > largest) {
+            largest = num3; // Update largest if num3 is greater
+        }
+    
+        return largest;
+    }
+    
+    // Example usage:
+    let number1 = parseFloat(prompt(" Enter the first number: "));
+    let number2 = parseFloat(prompt(" Enter the second number: "));
+    let number3 = parseFloat(prompt(" Enter the third number: "));
+    console.log(" The largest number is: " + findLargest(number1, number2, number3));
+    
+    ->The findLargest function takes three numbers num1, num2, and num3 as input.
+    ->It initializes a variable largest with the value of num1, assuming num1 is the largest initially.
+    ->It then compares num2 and num3 with largest and updates largest accordingly if any of them is greater.
+    ->Finally, it returns the value of largest, which would be the largest among the three numbers.
+    ->The code prompts the user to enter three numbers using prompt, parses the inputs to floating-point numbers using parseFloat, and stores them in variables number1, number2, and number3.
+    
+    Q.29 Write to show
+    i. Monday to Sunday using switch case in JS?
+    ii. Vowel or Consonant using switch case in JS?
+    i:Ans
+    function getDayOfWeek(dayNumber) {
+        let day;
+    
+        switch (dayNumber) {
+            case 1:
+                day = " Monday"; break; case 2: day="Tuesday" ; break; case 3: day="Wednesday" ; break; case 4:
+                            day="Thursday" ; break; case 5: day="Friday" ; break; case 6: day="Saturday" ; break; case
+                            7: day="Sunday" ; break; default: day="Invalid day number" ; } return day; } // Example
+                            usage: let dayNumber=parseInt(prompt("Enter a number (1-7) representing a day of the week: "));
+    console.log(" Day of the week: " + getDayOfWeek(dayNumber));
+    
+    ->The getDayOfWeek function takes a dayNumber as input.
+    ->Inside the switch statement, it checks the value of dayNumber.
+    ->For each case, it assigns the corresponding day of the week to the day variable.
+    ->If dayNumber does not match any of the cases (i.e., it's not between 1 and 7), it assigns " Invalid day number"
+                            to day. ->Finally, it returns the value of day.
+
+                            ii.Ans:
+                            function checkVowelOrConsonant(character) {
+                            // Convert character to lowercase for case-insensitive comparison
+                            character = character.toLowerCase();
+
+                            switch (character) {
+                            case 'a':
+                            case 'e':
+                            case 'i':
+                            case 'o':
+                            case 'u':
+                            return "Vowel";
+                            default:
+                            return "Consonant";
+                            }
+                            }
+
+                            // Example usage:
+                            let inputChar = prompt("Enter a character: ");
+                            console.log(inputChar + " is a " + checkVowelOrConsonant(inputChar));
+
+                            The checkVowelOrConsonant function takes a single character character as input.
+                            It converts the character to lowercase using toLowerCase() to make the comparison
+                            case-insensitive.
+                            Inside the switch statement, it checks whether the character is one of the vowels ('a', 'e',
+                            'i', 'o', 'u').
+                            If the character matches any of the cases for vowels, it returns "Vowel".
+                            If the character does not match any of the cases for vowels, it returns "Consonant" by
+                            default.
+                            The code prompts the user to enter a character using prompt and stores it in the variable
+                            inputChar.
+                            It then calls the checkVowelOrConsonant function with the user-entered character and logs
+                            the result to the console, indicating whether the character is a vowel or a consonant.
+
+                            ==>Conditional looping logic Question

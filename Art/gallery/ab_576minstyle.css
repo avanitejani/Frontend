@@ -1,0 +1,82 @@
+@media(min-width:576px) {
+
+
+    .mithi {
+        display: none;
+
+
+    }
+
+    .mithi2 {
+        display: block;
+        width: 100%;
+
+
+    }
+
+    .mithi2 .imglogo {
+        width: 100%;
+
+    }
+
+    .mithi2 .imglogo1 {
+        width: 200px;
+        padding: 20px;
+        justify-content: center;
+
+
+    }
+
+    .mithi2 .menu {
+        display: block;
+        width: 100%;
+
+    }
+
+    .mithi2 .menu .m2 {
+        margin: 10px;
+    }
+
+    .mithi2 .menu .m1 {
+        margin: 10px;
+        padding: 0px 0px;
+
+    }
+
+    .mithi2 ul {
+        width: 100%;
+        margin-left: -5%;
+        padding: 0px 0px;
+    }
+
+    .mithi2 ul li {
+        padding: 2px;
+
+    }
+
+    .mithi2 ul li a {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .mithi2 ul li a .a1 {
+        width: 80%;
+
+    }
+
+    .mithi2 ul li a .a2 {
+        width: 19%;
+
+    }
+
+    /* .mithi2 */
+
+    /* .back { */
+        /* background-image: url("img/slider.jpg"); */
+        /* background-attachment: fixed; */
+        /* position: relative; */
+        /* height: 850px;
+        width: 100%; */
+    /* } */
+
+}

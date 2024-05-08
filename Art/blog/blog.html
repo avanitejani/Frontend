@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>art new</title>
+
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <!-- JQuery link -->
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"
+    integrity="sha512-p55Bpm5gf7tvTsmkwyszUe4oVMwxJMoff7Jq3J/oHaBk+tNQvDKNz9/gLxn9vyCjgd6SAoqLnL13fnuZzCYAUA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css"
+    integrity="sha512-UBY4KATrDAEKgEEU+RAfY4yWrK0ah43NGwNr5o/xmncxsT+rv8jp7MI3a00I0Ep3NbAx05U5kw3DvyNCoz+Wcw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+    <!-- font-awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- bx -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+
+
+
+    <!-- auto <576 
+        sm   >576 
+        md   >768 
+        lg   >992
+        xl  >1200px
+        xxl >1400px -->
+
+
+
+
+
+    <!-- css link  -->
+
+    <link rel="stylesheet" href="ab_style.css">
+
+    <link rel="stylesheet" href="ab_576max.css">
+    <link rel="stylesheet" href="ab_576minstyle.css">
+    <link rel="stylesheet" href="ab_768style.css">
+    <link rel="stylesheet" href="ab_992style.css">
+    <link rel="stylesheet" href="ab_1200style.css">
+    <link rel="stylesheet" href="ab_1400style.css">
+    <link rel="stylesheet" href="ab_1870style.css">
+
+
+
+
+
+
+
+
+
+
+    <style>
+        .monika {
+            /* background-color: black !important; */
+            background: rgba(0, 0, 0, .8) !important;
+            color: red !important;
+        }
+
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: Verdana, sans-serif;
+            margin: 0
+        }
+
+        .mySlides {
+            display: none
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+
+            .prev,
+            .next,
+            .text {
+                font-size: 11px
+            }
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <!-- auto <576 
+      sm   >576 
+      md   >768 
+      lg   >992
+      xl  >1200px
+      xxl >1400px -->
+
+    <!-- <img src="img/logo.png" alt=""> -->
+
+    <!-- <div class="art  position-relative ">
+    <div class="img "><img src="img/slider.jpg" alt="" ></div>
+  </div> -->
+    <div class=" back position-relative"></div>
+
+
+    <div class="header container-fluid position-absolute top-0 position-fixed z-1">
+        <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+            <div class="bg-dark">
+
+                <header>
+                    <div class="mithi z-1">
+                        <ul>
+
+                            <li class="drop1">
+                                <a href="../art.html"><span id="icon" class="fa-solid fa-paintbrush"
+                                        style="color: #d4d4d4;"></span> <span id="sr">[</span>
+                                    HOME </span><span id="sl">]</span></a>
+                                <ul class="Gallery">
+                                    <li><a href="gallery-detail.html"><span id="sr">[</span> Gallery detail <span
+                                                id="sl">]</span></a>
+                                    </li>
+                                    <li><a href="gallery-detail-with-lhs.html"><span id="sr">[</span>
+                                            Gallery-detail-left-sidebar <span id="sl">]</span></a></li>
+                                    <li><a href="gallery-detail-with-rhs.html"><span id="sr">[</span>
+                                            Gallery-detail-right-sidebar <span id="sl">]</span></a></li>
+                                    <!-- <li><a href="gallery-detail-with-rhs.html"><span id="sr">[</span> Gallery-detail-right-sidebar <span
+                        id="sl">]</span></a></li> -->
+
+                                </ul>
+                            </li>
+
+
+
+                            <li>
+                                <a href="../About/about.html"><span id="icon" class="fa-solid fa-camera-retro"
+                                        style="color: #d4d4d4;"></span>
+                                    <span id="sr">[</span> ABOUT US </span><span id="sl">]</span></a>
+                            </li>
+
+
+                            <li class="drop1">
+                                <a href="../gallery/gallery.html"><span id="icon" class="fa-solid fa-cart-plus"
+                                        style="color: #d4d4d4;"></span>
+                                    <span id="sr">[</span> GALLERY </span><span id="sl">]</span></a>
+
+
+                                <ul class="Gallery">
+                                    <li><a href="../gallery/gallery.html"><span id="sr">[</span> Gallery detail <span
+                                                id="sl">]</span></a>
+                                    </li>
+                                    <li><a href="gallery-detail-with-lhs.html"><span id="sr">[</span>
+                                            Gallery-detail-left-sidebar <span id="sl">]</span></a></li>
+                                    <li><a href="gallery-detail-with-rhs.html"><span id="sr">[</span>
+                                            Gallery-detail-right-sidebar <span id="sl">]</span></a></li>
+
+                                </ul>
+
+
+                            </li>
+
+
+                            <li class="drop1">
+                                    <a href="../shop/shop.html"><span id="icon" class="fa-solid fa-square-pen" style="color: #d4d4d4;"></span> <span
+                                            id="sr">[</span> SHOP </span><span id="sl">]</span></a>
+
+
+
+                                <ul class="Gallery">
+                                    <li><a href="gallery-detail.html"><span id="sr">[</span> Gallery detail <span
+                                                id="sl">]</span></a>
+                                    </li>
+                                    <li><a href="gallery-detail-with-lhs.html"><span id="sr">[</span>
+                                            Gallery-detail-left-sidebar <span id="sl">]</span></a></li>
+                                    <li><a href="gallery-detail-with-rhs.html"><span id="sr">[</span>
+                                            Gallery-detail-right-sidebar <span id="sl">]</span></a></li>
+
+                                </ul>
+                            </li>
+
+
+                            <li class="drop1">
+                                        <a id="m1" href="../blog/blog.html"><span id="icon" class="fa-solid fa-user-secret" style="color: #c4c2c2;"></span>
+                                            <span id="sr" style="color: maroon;">[</span>
+                                            BLOG </span><span id="sl" style="color: maroon;">]</span></a>
+
+
+                                <ul class="Gallery">
+                                    <li><a href="gallery-detail.html"><span id="sr">[</span> Gallery detail <span
+                                                id="sl">]</span></a>
+                                    </li>
+                                    <li><a href="gallery-detail-with-lhs.html"><span id="sr">[</span>
+                                            Gallery-detail-left-sidebar <span id="sl">]</span></a></li>
+                                    <li><a href="gallery-detail-with-rhs.html"><span id="sr">[</span>
+                                            Gallery-detail-right-sidebar <span id="sl">]</span></a></li>
+
+                                </ul>
+                            </li>
+
+
+                            <li>
+                                <a href=""><span id="icon" class="fa-solid fa-location-dot"
+                                        style="color: #d4d4d4;"></span> <span id="sr">[</span> CONTACT </span><span
+                                        id="sl">]</span></a>
+                            </li>
+
+
+                            <li class="drop1">
+                                <a href="../SHORTCODES/shortcodes.html"><span id="icon" class="fa-solid fa-paintbrush"
+                                        style="color: #d4d4d4;"></span> <span id="sr">[</span> SHORTCODES </span><span
+                                        id="sl">]</span></a>
+                                <ul class="Gallery">
+                                    <li><a href="gallery-detail.html"><span id="sr">[</span> Gallery detail <span
+                                                id="sl">]</span></a>
+                                    </li>
+                                    <li><a href="gallery-detail-with-lhs.html"><span id="sr">[</span>
+                                            Gallery-detail-left-sidebar <span id="sl">]</span></a></li>
+                                    <li><a href="gallery-detail-with-rhs.html"><span id="sr">[</span>
+                                            Gallery-detail-right-sidebar <span id="sl">]</span></a></li>
+                                    <!-- <li><a href="gallery-detail-with-lhs.html"><span id="sr">[</span> Gallery-detail-left-sidebar <span
+                        id="sl">]</span></a></li>
+                  <li><a href="gallery-detail-with-rhs.html"><span id="sr">[</span> Gallery-detail-right-sidebar <span
+                        id="sl">]</span></a></li> -->
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+
+
+                </header>
+
+
+            </div>
+        </div>
+        <nav id="avani" class="navbar navbar-dark bg-transparent ">
+
+            <div class="container-fluid ">
+                <img class="justify-content-start p-3 ms-5" src="img/logo.png" alt="">
+
+                <button id="btn" class="navbar-toggler justify-content-end me-5" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fa-solid fa-bars fa-xl " style="color: white;"></span>
+                </button>
+
+
+
+
+            </div>
+        </nav>
+
+
+
+
+
+
+    </div>
+
+
+    <div class=" mithi2 container-fluid position-absolute top-0 position-fixed">
+
+        <div class="imglogo">
+            <img class="imglogo1" src="img/logo.png" alt="">
+        </div>
+
+        <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+            <div class="tejani   ms-5">
+                <ul class="">
+                    <li class="d-flex justify-content-between ">
+                        <a href="" class="a1 ">HOME</a>
+                        <a href="" class="s2 text-end">+</a>
+                    </li>
+                    <li class="d-flex justify-content-between ">
+                        <a href="" class="a1 ">ABOUT US</a>
+                        <a href="" class="s2 text-end"></a>
+                    </li>
+                    <li class="d-flex justify-content-between ">
+                        <a href="" class="a1 ">GALLERY</a>
+                        <a href="" class="s2 text-end">+</a>
+                    </li>
+                    <li class="d-flex justify-content-between ">
+                        <a href="" class="a1 ">SHOP</a>
+                        <a href="" class="s2 text-end">+</a>
+                    </li>
+                    <li class="d-flex justify-content-between ">
+                        <a href="" class="a1 ">BLOG</a>
+                        <a href="" class="s2 text-end">+</a>
+                    </li>
+                    <li class="d-flex justify-content-between ">
+                        <a href="" class="a1 ">CONTACT</a>
+                        <a href="" class="s2 text-end"></a>
+                    </li>
+                    <li class="d-flex justify-content-between ">
+                        <a href="" class="a1 ">SHORTCODES</a>
+                        <a href="" class="s2 text-end">+</a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+        <nav class="menu navbar navbar-dark bg-dark" style="background-color: black;">
+            <div class=" container-fluid " style="background-color: black;">
+                <button class="m2 ms-5">MENU</button>
+
+                <button id="" class="m1 navbar-toggler justify-content-end me-5" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fa-solid fa-bars fa-xl " style="color: white;"></span>
+                </button>
+            </div>
+        </nav>
+
+    </div>
+
+
+    <!-- section1  -->
+    <div class="section1 p-5">
+        <div class="container-fluid d-flex p-5">
+            <div class="col-5 p-5">
+                <h1>Gallery <span>ART</span></h1>
+            </div>
+            <div class="col-7  p-5">
+                <ul class="d-flex">
+                    <li><a href="">MY ACCOUNT</a></li>
+
+                    <li><a href="">CHECKOUT</a></li>
+
+                    <li><a href="">SHOPPING BAG: 0 ITEMS</a></li>
+
+                    <li><a href="">($0.00)</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- <img src="img/slider.jpg" alt=""> -->
+
+    <div class="section4 container-fluid p-5">
+        <div class="container justify-content-center text-center m-5 p-5">
+            <div class="titel text-light">
+                <h1>BLOG</h1>
+                <p class="fst-italic"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+            </div>
+            <div class="imgline container">
+                <img src="img/title-line.png" alt="">
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- section 10 -->
+
+    <div class="section10 d-flex">
+        <img src="img/title-line.png" alt="">
+        <img src="img/title-line.png" alt="">
+        <img src="img/title-line.png" alt="">
+        <img src="img/title-line.png" alt="">
+        <img src="img/title-line.png" alt="">
+        <img src="img/title-line.png" alt="">
+
+        <img src="img/title-line.png" alt="">
+
+    </div>
+
+    <div class="footer p-5">
+        <div class="top">
+            <ul class="d-flex">
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">Terms of use</a></li>
+                <li><a href="#">Faq</a></li>
+            </ul>
+            <ul class="payment d-flex">
+                <li><a href="#" class="fa-brands fa-cc-amex"></a></li>
+                <li><a href="#" class="fa-brands fa-cc-mastercard"></a></li>
+                <li><a href="#" class="fa-brands fa-cc-visa"></a></li>
+                <li><a href="#" class="fa-brands fa-cc-discover"></a></li>
+                <li><a href="#" class="fa-brands fa-cc-paypal"></a></li>
+            </ul>
+            <p>© 2015 <a href="#">RED ART</a>. All rights reserved.</p>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+
+    <script>
+        $(function () {
+            $('.bxslider').bxSlider({
+                mode: 'fade',
+                captions: true,
+                slideWidth: 950,
+                // slideHightlight: false
+                // slideHeight:1000,
+                auto: true,
+                pager: false
+
+
+            });
+        });
+
+
+
+        $(document).ready(function () {
+
+            $("#btn").click(function () {
+                console.log("hi");
+                $("#avani").toggleClass("monika");
+            })
+        });
+
+    </script>
+
+</body>
+
+</html>

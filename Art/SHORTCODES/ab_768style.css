@@ -1,0 +1,159 @@
+@media(min-width:768px) {
+
+  .mithi {
+    width: 100%;
+  }
+
+  .mithi ul {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    margin-left: -10px;
+    list-style: none;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    list-style-type: none;
+    list-style-position: inside;
+    position: relative;
+
+  }
+
+  .mithi ul li {
+    width: 100%;
+    text-align: center;
+    display: list-item;
+  }
+
+
+
+  .mithi a {
+    font-size: 14px;
+    display: block;
+    margin: 0;
+    overflow: hidden;
+    text-decoration: none;
+    font-weight: 100;
+    color: white;
+    padding: 33px 0px 46px 0px;
+    text-align: center;
+
+  }
+
+
+
+
+
+
+  #icon1 {
+    font-size: 24px;
+    margin-right: -40px;
+  }
+
+  .mithi .Gallery {
+    height: 150px;
+    z-index: 3;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    display: none;
+
+  }
+
+  .mithi .Gallery li {
+    margin: 0px;
+    padding: 10px;
+  }
+
+  .mithi .Gallery li a {
+    padding: 5px;
+    margin: 0px;
+    font-size: 12px;
+    display: block;
+    margin: 0;
+    overflow: hidden;
+
+  }
+
+  .mithi {
+    display: block;
+  }
+
+  .mithi2 {
+    display: none;
+    width: 100%;
+
+  }
+
+  .mithi2 .imglogo {
+    width: 100%;
+
+  }
+
+  .mithi2 .imglogo1 {
+    width: 200px;
+    padding: 20px;
+    justify-content: center;
+
+
+  }
+
+  .mithi2 .menu {
+    display: block;
+    width: 100%;
+
+  }
+
+  .mithi2 .menu .m2 {
+    margin: 10px;
+  }
+
+  .mithi2 .menu .m1 {
+    margin: 10px;
+    padding: 0px 0px;
+
+  }
+
+  .mithi2 ul {
+    width: 97%;
+    padding: 0px 0px;
+  }
+
+  .mithi2 ul li {
+    padding: 10px;
+  }
+
+  .mithi2 ul li a {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .mithi2 ul li a .a1 {
+    width: 80%;
+
+  }
+
+  .mithi2 ul li a .a2 {
+    width: 19%;
+
+  }
+
+  /* .mithi2 */
+
+  /* .back { */
+    /* background-image: url("img/slider.jpg"); */
+    /* background-attachment: fixed; */
+    /* position: relative; */
+    /* height: 900px;
+    width: 100%; */
+  /* } */
+
+  
+  
+
+
+
+
+
+
+}

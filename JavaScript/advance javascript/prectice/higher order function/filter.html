@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
 
     <script>
-    // 02_filter : for remove value index value from array using condition
-    
+        // 02_filter : for remove value index value from array using condition
 
-    // Example 1
-        
+        // filter() method creates a new array filled with elements that pass a test provided by a function.
+
+        // filter() method does not execute the function for empty elements.
+
+        // filter() method does not change the original array.
+
+
+        // Example 1
+
 
         // let std = [
         //   { name: 'monika', mark: 30, age: 20 },
@@ -27,25 +35,52 @@
 
         // console.log(newStd)
 
-    // Example 2
+        // Example 2
         let std = [
             { name: 'monika', mark: 30, age: 20 },
             { name: 'hemali', mark: 37, age: 21 },
             { name: 'mirali', mark: 40, age: 19 },
             { name: 'avni', mark: 50, age: 22 },
         ]
+        console.log('currenet data giving in arrey');
+        console.log(std);
+
         // add mark 10 and remove mark value below 45
 
         let newStd = std.map((result, index) => {
             return { name: result.name, mark: result.mark + 10, age: result.age }
         })
+        console.log("add mark 10 to all in currenet data and creat updatad data usind map function")
+        console.log(newStd)
+
 
         let newStd2 = newStd.filter((result, index) => {
             return result.mark > 45
         })
+        console.log("remove mark value below 45 in updatad value using filter method")
         console.log(newStd2)
 
     </script>
-    
+    <!-- html  -->
+
+    <h1>JavaScript Arrays</h1>
+    <h2>The filter() Method</h2>
+
+    <p>Get every element in the array that has a value of 18 or more:</p>
+
+    <p id="demo"></p>
+
+    <!-- javascript  -->
+    <script>
+        const ages = [32, 33, 16, 40];
+
+        document.getElementById("demo").innerHTML = ages.filter(checkAdult);
+
+        function checkAdult(age) {
+            return age >= 18;
+        }
+    </script>
+
 </body>
+
 </html>
